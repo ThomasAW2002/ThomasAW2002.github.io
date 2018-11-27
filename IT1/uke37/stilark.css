@@ -1,0 +1,33 @@
+
+body{
+    background-color: #3a3a3a;
+color: white;
+
+  }
+header{
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+
+ul{
+  list-style-type: none;
+  margin-left:0;
+}
+li{
+  display: inline;
+}
+li a{
+  text-decoration: none;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  color: white;
+}
+
+img{
+  width: 70prosent;
+  display:block;
+  margin: auto;
+}

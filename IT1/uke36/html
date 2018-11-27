@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tabeller</title>
+  </head>
+  <body>
+  <h1>Tabeller</h1>
+  <table border=1 style="text-align:left; border-style:solid;"> <!--Skriver hele tabellen i et table element-->
+    <thead> <!--samler overskriftene i et table eliment-->
+
+    </thead>
+    <tbody><!--samler alt innholdt i en tbody element-->
+      <tr><!--Lager en ny rad for alle overskriftene med tr elimentet-->
+        <th>Album</th><!--Lager overskrift med th elimentet-->
+        <th>Artist</th>
+        <th>År</th>
+      </tr><!--lager en ny rad-->
+      <td>American Idiot</td><!--legger innholdt i kolone-->
+      <td>The Greenday</td>
+      <td>2016</td>
+      <tr><!--ny rad-->
+        <td>Triller</td><!--innholdt skrives i en td eliment-->
+        <td>Michael Jackson</td>
+        <td>1982</td>
+        <tr>
+          <td>Gods Plan</td>
+          <td>Drake</td>
+          <td>2017</td>
+          <tr>
+            <td>Alive</td>
+            <td>Neptunica</td>
+            <td>2018</td>
+          </tr>
+
+        </tr>
+        <td> <a href="https://www.spotify.com">link her</a> </td>
+      </tr>
+      <tr>
+   <td> <a href="https://www.spotify.com">link her</a> </td>
+      </tr>
+      <!DOCTYPE html>
+      <html lang="nb" dir="ltr">
+        <head>
+          <meta charset="utf-8">
+          <title>Skjema</title>
+        </head>
+        <body>
+          <h1>skjema</h1>
+
+          <form action="registrer.html">
+      <label> <h2>registrerings for min konfirmasjon</h2> </label>
+
+
+           <label for="inputNavn">Navn:</label>
+
+            <input id="inputNavn"type="text" name="navn" placeholder="skriv inn ditt navn" required>
+
+            <label for="inputAlder">Alder</label>
+            <input id="inputAlder" type="number" name="Alder" placeholder="Skriv inn din alder" required>
+
+      <label>Hva ønsker du å spise?</label>
+      <br>
+
+            <input id="rbTaco"type="radio" name="rbMat" value="taco"><label for="rbTaco">Taco</label>
+            <input id="rbPizza"type="radio" name="rbMat" value="Pizza"><label for="rbPizza">Pizza</label>
+            <input id="rbFisk="type="radio" name="rbMat" value="Fisk"><label for="rbFisk">Fisk</label>
+      <br>
+      <br>
+
+
+
+      <br>
+
+            <label>hvilke farge liker du?</label>
+
+            <br>
+
+            <input type="color" name="green">
+
+            <br>
+            <br>
+      <label for="range">hvor mye du har lyst til å komme</label>
+      <br>
+            <input type="range" name="numbers">
+            <br>
+            <br>
+            <input type="date" name="days">
+            <br>
+            <br>
+      <label>skriv et ord</label>
+      <br>
+            <input type="password" name="" value="">
+            <br>
+            <label>Vil du ha mat?</label>
+            <br>
+            <br>
+      <label for="ja">ja</label>
+        <input id="ja" type="checkbox" name="mat" value="ja">
+        <label for="nei">nei</label>
+        <input id="nei" type="checkbox" name="Mat" value="Nei">
+      <br>
+      <br>
+
+          <button type="sumbit" name="Registreringsknapp">Send inn</button>
+
+          </form>
+
+        </body>
+      </html>
+
+    </tbody>
+  </table>
+  </body>
+</html>

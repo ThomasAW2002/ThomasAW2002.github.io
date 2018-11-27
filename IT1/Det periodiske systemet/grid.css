@@ -1,0 +1,38 @@
+body{
+  background-color: none;
+}
+main{
+
+}
+#hoved{
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-gap: 5px;
+}
+#lantanider{
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-gap: 5px;
+}
+.grunnstoff{
+  background-color: #eee;
+}
+.col-span-17{
+  grid-column: span 16;
+}
+.col-span-11 {
+  grid-column: span 10;
+  opacity: 0;
+}
+.usynlig{
+  opacity: 0;
+}
+.g{
+  background-color: green
+}
+.r{
+  background-color: red
+}
+.b{
+  background-color: blue
+}
