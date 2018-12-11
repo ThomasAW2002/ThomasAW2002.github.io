@@ -15,7 +15,7 @@ li a{
   }
 ul li{
   display: inline;
-} 
+}
 header{
   text-align: center;
   background-color: #37474F;
@@ -31,7 +31,7 @@ header h1{
 
 
 main{
-  width:500px;
+  width:700px;
   margin:auto;
   background-color: #607D8B;
   color: #FFFFFF;
