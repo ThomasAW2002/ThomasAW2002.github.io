@@ -2,7 +2,7 @@ body{
   background-color: #ECEFF1;
   margin: 0;
   font-family: helvetica, sans-serif;
-  
+
 
 }
 li a{
@@ -15,7 +15,7 @@ li a{
   }
 ul li{
   display: inline;
-}
+} 
 header{
   text-align: center;
   background-color: #37474F;
