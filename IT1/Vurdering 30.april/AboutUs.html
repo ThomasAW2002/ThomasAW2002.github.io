@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Doctor Who</title>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB5gi_QeybvWTGtj2szMfqLwu5FRingF1Y",
+        authDomain: "doctor-who-ef38d.firebaseapp.com",
+        databaseURL: "https://doctor-who-ef38d.firebaseio.com",
+        projectId: "doctor-who-ef38d",
+        storageBucket: "",
+        messagingSenderId: "854602457985"
+      };
+      firebase.initializeApp(config);
+    </script>
+<link rel="stylesheet" href="AboutUsstylesheet.css">
+  </head>
+
+  <header>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <body>
+
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large"
+    onclick="w3_close()">Close &times;</button>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="Shop.html" class="w3-bar-item w3-button">Shop</a>
+    <a href="Explore.html" class="w3-bar-item w3-button">Explore 3</a>
+    <a href="AboutUs.html" class="w3-bar-item w3-button">About Us</a>
+
+  </div>
+
+  <div id="main">
+
+  <div class="w3-teal">
+    <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+    <div class="w3-container">
+      <h1>Doctor Who</h1>
+    </div>
+  </div>
+
+  </div>
+
+  <script>
+  function w3_open() {
+    document.getElementById("main").style.marginLeft = "25%";
+    document.getElementById("mySidebar").style.width = "25%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
+  }
+  function w3_close() {
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("openNav").style.display = "inline-block";
+  }
+  </script>
+
+  </header>
+
+  <body>
+
+    <p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+  </body>
+</html>

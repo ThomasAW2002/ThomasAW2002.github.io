@@ -1,0 +1,179 @@
+ {
+    "varer":{
+          "Screwdriver":{
+              "driver001":{
+                "merke":"10th Screwdriver",
+                "pris":140,
+                "modell":"versjon 10",
+                "ImageURL":""
+                  },
+                  "driver002":{
+                    "merke":"11th Screwdriver",
+                    "pris":140,
+                    "modell":"versjon 11",
+                    "ImageURL":""
+                },
+                  "driver003":{
+                    "merke":"12th Scredriver",
+                    "pris":140,
+                    "modell":"versjon 12",
+                    "ImageURL":""
+                },
+                "driver004":{
+                  "merke":"13th Screwdriver",
+                  "pris":140,
+                  "modell":"versjon 13",
+                  "ImageURL":""
+                }
+            },
+          "t-shorter":{
+            "t-shorte001":{
+                "pris":100,
+                "merke":"Who Merch",
+                "størrelse":"medium",
+                "ImageURL":""
+            },
+
+            "t-shorte002":{
+                "pris":100,
+                "merke":"Who Merch",
+                "størrelse":"medium",
+                "ImageURL":""
+            },
+            "t-shorte003":{
+                "pris":100,
+                "merke":"Who Merch",
+                "størrelse":"medium",
+                "ImageURL":""
+            },
+            "t-shorte004":{
+                "pris":100,
+                "Merke":"Who Merch",
+                "størrelse":"medium",
+                "ImageURL":""
+            }
+          },
+          "Pillows":{
+            "Pillow001":{
+              "pris":145,
+              "merke":"Who Merch",
+              "størrelse":"medium",
+              "Doctor":"11th",
+              "ImageURL":""
+            },
+            "Pillows002":{
+              "pris":130,
+              "merke":"Who Merch",
+              "størrelse":"Large",
+              "Doctor":"11th",
+              "ImageURL":""
+            },
+            "Pillows003":{
+              "pris":135,
+              "merke":"Who Merch",
+              "størrelse":"small",
+              "Doctor":"11th",
+              "ImageURL":""
+            },
+            "Pillows004":{
+              "pris":160,
+              "merke":"Who Merch",
+              "størrelse":"Large",
+              "Doctor":"12th",
+              "ImageURL":""
+              },
+              "Pillows005":{
+                "pris":130,
+                "merke":"Who Merch",
+                "størrelse":"Small",
+                "Doctor":"12th",
+                "ImageURL":""
+                },
+                "Pillows006":{
+                  "pris":150,
+                  "merke":"Who Merch",
+                  "størrelse":"Medium",
+                  "Doctor":"12th",
+                  "ImageURL":""
+                  },
+                  "Pillows007":{
+                    "pris":130,
+                    "merke":"Who Merch",
+                    "størrelse":"Large",
+                    "Doctor":"10th",
+                    "ImageURL":""
+                    },
+                    "Pillows008":{
+                      "pris":130,
+                      "merke":"Who Merch",
+                      "størrelse":"Large",
+                      "Doctor":"10th",
+                      "ImageURL":""
+                      },
+                      "Pillows009":{
+                        "pris":130,
+                        "merke":"Who Merch",
+                        "størrelse":"Large",
+                        "Doctor":"10th",
+                        "ImageURL":""
+                      }
+                    },
+              "Mugs":{
+                  "Mugs001":{
+                    "pris":80,
+                    "merke":"Who Merch",
+                    "Doctor":"10th",
+                    "ImageURL":""
+                  },
+
+                  "Mugs002":{
+                  "pris":70,
+                  "merke":"Who Merch",
+                  "Doctor":"10th",
+                  "ImageURL":""
+                },
+                "Mugs003":{
+                  "pris":60,
+                  "merke":"Who Merch",
+                  "Doctor":"10th",
+                  "ImageURL":""
+                },
+                "Mugs004":{
+                  "pris":75,
+                  "merke":"Who Merch",
+                  "Doctor":"11th",
+                  "ImageURL":""
+                },
+                "Mugs005":{
+                  "pris":90,
+                  "merke":"Who Merch",
+                  "Doctor":"11th",
+                  "ImageURL":""
+                },
+                "Mugs006":{
+                  "pris":40,
+                  "merke":"Who Merch",
+                  "Doctor":"11th",
+                  "ImageURL":""
+                },
+                "Mugs007":{
+                  "pris":50,
+                  "merke":"Who Merch",
+                  "Doctor":"12th",
+                  "ImageURL":""
+                },
+                "Mugs008":{
+                  "pris":68,
+                  "merke":"Who Merch",
+                  "Doctor":"12th",
+                  "ImageURL":""
+                },
+                  "Mugs009":{
+                    "pris":75,
+                    "merke":"Who Merch",
+                    "Doctor":"12th",
+                    "ImageURL":""
+                }
+              }
+            }
+}

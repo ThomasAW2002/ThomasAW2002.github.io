@@ -1,0 +1,27 @@
+{
+  "kontakter":{
+    "l":{
+      "firstName":"Thomas",
+      "lastName": "Winterbourne",
+      "Telephone":98607656,
+      "adress": "Badebakken 8, 0467 oslo",
+      "likerInternett":true,
+      "bokerPaNattbordet":["Of mice and men","Kjempenes Fall","Sapiens"],
+    
+        "2":{
+        "firstname":"Erlend",
+        "lastname":"Severas",
+        "Telephone":9095565,
+        "adress":"Et sted i verden"
+      },
+ "3":{
+  "firstName":"Thomas",
+  "lastName": "Winterbourne",
+  "Telephone":98607656,
+  "adress": "Badebakken 8, 0467 oslo",
+  "pet":"Dog"
+}
+
+      }
+    }
+  }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nettbutikk</title>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDuXkWdEh1-GtV3eBw5vc8T2cRQ6x1Dh6c",
+    authDomain: "nettbutikk-eed5d.firebaseapp.com",
+    databaseURL: "https://nettbutikk-eed5d.firebaseio.com",
+    projectId: "nettbutikk-eed5d",
+    storageBucket: "nettbutikk-eed5d.appspot.com",
+    messagingSenderId: "1014631690001"
+  };
+  firebase.initializeApp(config);
+</script>
+  </head>
+  <body>
+
+<script type="text/javascript">
+  const db = firebase.database();
+  const sko = db.ref("varer/sko");
+  const jakker = db.ref("varer/jakker");
+
+  function visVare(snapshot){
+    console.log(snapshot.val());
+  }
+
+  //sko.on("child_added",visVare);
+  sko
+  .orderByChild("pris")//sorteringsfuksjon som sorterer på pris
+  .limitToFirst(2)//sorteringsfunksjon, som gir de to siste
+  .on("child_added",visVare);//spørrefunkssjon, lytter etter nye oppføringer, og kjører visVare på hver oppføringer
+  //sko.orderByChild("pris").limitToLast for å få det motsatte
+
+</script>
+  </body>
+</html>

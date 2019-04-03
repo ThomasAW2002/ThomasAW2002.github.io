@@ -1,0 +1,56 @@
+{
+  "1":{
+    "svar":"En primærnøkkel er en unik nøkkel til hvert objekt i databasen og gjør at vi lett kan søke i databasen og gjør at vi kan skille mellom objekter med lik verdi, eksempel to bøker med samme navn"
+  },
+  "2":{
+    "a":{
+      "svar":"Feide ID",
+      "b":{
+        "svar":"registreringsnummer",
+        "c":{
+          "svar":"Latin Navn",
+          "d":{
+            "svar":"Første boksavet fra hver kontakt",
+            "e":{
+              "svar":"Stjernetegnet ditt eller et navn på et stjerne.",
+      }
+    },
+    "3":{
+      "svar":"Kandidatnøkler er alle alternativene som kan brukes som primærnøkkel.",
+
+
+    }
+  },
+  "4":{
+    "svar":"Det som kobler sammen forskjellige databaser sammen",
+
+    "5":{
+      "svar":"Teknikker som blir brukt for å unngå dobbeltlagring og duplisering av data, kalles normalisering",
+      "6":{
+        "svar":{
+          "brukere":{
+            "thorcc":{
+              "passord":"password123",
+              "highScore":5000
+            },
+            "jarle123":{
+              "passord":"hayi4rf315!",
+              "highScore":1337
+            }
+          },
+          "meldinger":{
+            "001":{
+              "tekst":"Hei Jarle!",
+              "brukernavn":"thorcc"
+            },
+            "002":{
+              "tekst":"Hallo Thor",
+              "brukernavn":"jarle123"
+            }
+
+          }
+        }
+
+
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB5gi_QeybvWTGtj2szMfqLwu5FRingF1Y",
+        authDomain: "doctor-who-ef38d.firebaseapp.com",
+        databaseURL: "https://doctor-who-ef38d.firebaseio.com",
+        projectId: "doctor-who-ef38d",
+        storageBucket: "",
+        messagingSenderId: "854602457985"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+  </head>
+  <body>
+    <main>
+      <script type="text/javascript">
+        //Referanser til HTML-elementer
+        const main = document.querySelector("main");
+
+        //Kode som henter ut info fra url
+        let url_string = window.location.href;
+        let url = new URL(url_string);
+        let id = url.searchParams.get("id");
+
+        console.log(id);
+
+        //Referanser til databasen
+        const db= firebase.database();
+        const items = db.ref("varer");
+        const valgtItems = db.ref("varer/"+id);
+
+        //Setup, eller oppstart da
+        visAlleItems();
+
+
+        function visValgteItems(){
+          main.innerHTML = ``;
+          valgtItems.on("value", genererHTML);
+        }
+
+        function genererHTML(snapshot){
+          let key = snapshot.key;
+          let objekt = snapshot.val();
+          console.log(key,objekt);
+          let typeTekst = "";
+          if(objekt.pris){
+            typeTekst = `Type 1: ${objekt.modell} og type 2: ${objekt.pris}`;
+          }
+          else {
+            typeTekst = `Type 1: ${objekt.Type1}`;
+
+          }
+
+        main.innerHTML += `
+          <section class="valgtItems">
+          <h1>${objekt.Pris}</h1>
+          <img src="${objekt.ImageURL}">
+          <p>${typeTekst}</p>
+          <p>Pris: ${objekt.Pris}</p>
+          <p>merke: ${objekt.merke}</p>
+          </section>
+          `
+        }
+
+        //pokemon.on("child_added", visPokemon);
+
+
+
+      </script>
+    </main>
+  </body>
+</html>

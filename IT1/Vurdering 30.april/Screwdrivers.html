@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Doctor Who</title>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB5gi_QeybvWTGtj2szMfqLwu5FRingF1Y",
+        authDomain: "doctor-who-ef38d.firebaseapp.com",
+        databaseURL: "https://doctor-who-ef38d.firebaseio.com",
+        projectId: "doctor-who-ef38d",
+        storageBucket: "",
+        messagingSenderId: "854602457985"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="Shopstylesheet.css">
+  </head>
+
+  <header>
+
+
+  <body>
+
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large"
+    onclick="w3_close()">Close &times;</button>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="Shop.html" class="w3-bar-item w3-button">Shop</a>
+    <a href="Explore.html" class="w3-bar-item w3-button">Explore 3</a>
+    <a href="AboutUs.html" class="w3-bar-item w3-button">About Us</a>
+
+  </div>
+
+  <div id="main">
+
+  <div class="w3-teal">
+    <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+    <div class="w3-container">
+      <h1>Doctor Who</h1>
+    </div>
+  </div>
+
+  </div>
+
+  <script>
+  function w3_open() {
+    document.getElementById("main").style.marginLeft = "25%";
+    document.getElementById("mySidebar").style.width = "25%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
+  }
+  function w3_close() {
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("openNav").style.display = "inline-block";
+  }
+  </script>
+
+
+  <button type="visAlleItems" name="button">Reset</button>
+  <button type="visCoasters" name="button">Coasters</button>
+  <button type="visTshirts" name="button">T-shirts</button>
+  <button type="visPillows" name="button">pillows</button>
+  <button type="visScrewdrivers" name="button">Screwdrivers</button>
+
+
+
+  </header>
+
+  <body>
+
+<main>
+
+</main>
+<hr>
+<script>
+
+    const main = document.querySelector("main"); // Variabel som referer til mian-elementet
+
+      // Referanser til databasen
+    const db = firebase.database();
+    const Items = db.ref("varer"); // Referer til alt som ligger under sko i databasen
+    const Mugs = db.ref("varer/Mugs");
+    const Tshirts = db.ref("varer/Tshirts");
+    const Pillows = db.ref("varer/Pillows");
+    const Coasters = db.ref("varer/Coasters");
+    const Scrwdrivers = db.ref("varer/Screwdrivers");
+
+
+
+
+    function visAlleItems(snapshot){
+          //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
+        let ItemSnap = snapshot.val();
+        let key = snapshot.key;
+        console.log(key);
+        console.log(ItemSnap);
+
+        let modell = "";
+        if(ItemSnap.modell){
+          modell = `<p>Modell: ${ItemSnap.modell}</p>`
+        }
+        let merke = "";
+        if(ItemSnap.merke){
+          merke = `<p>Merke: ${ItemSnap.merke}</p>`
+        }
+
+        main.innerHTML +=`
+        <a href="ShopItems.html?id=${key}">
+            <article class="varer">
+              <h1>${ItemSnap.merke}</h1>
+              <img src="${ItemSnap.ImageURL}" alt="">
+              ${modell}
+              ${merke}
+              <p>Pris: ${ItemSnap.pris} kr</p>
+              Les mer
+            </article>
+            </a>
+        `;
+    }
+
+    // Kjører når nettsiden lastes
+      visScrewdrivers();
+
+      function visAlle(){
+      main.innerHTML = ``
+      Mugs.on("child_added",visAlleItems);
+      Tshirts.on("child_added",visAlleItems);
+      Pillows.on("child_added",visAlleItems);
+      Coasters.on("child_added",visAlleItems);
+      Screwdrivers.on("child_added",visAlleItems);
+    }
+
+
+
+    function visCoasters(){
+      main.innerHTML = ``
+      Items.orderByChild("Type1").equalTo("Pris").on("child_added",visAlleItems);
+      Items.orderByChild("Type2").equalTo("Merch").on("child_added",visAlleItems);
+      Items.orderByChild("Type3").equalTo("Doc").on("chld_added",visAlleItems);
+    }
+
+    function visPillows(){
+      main.innerHTML = ``;
+      Items.orderByChild("Type1").equalTo("Pris").on("child_added",visAlleItems);
+      Items.orderByChild("Type2").equalTo("Merch").on("child_added",visAlleItems);
+      Items.orderByChild("Type3").equalTo("Doc").on("chld_added",visAlleItems);
+    }
+    function visScrewdrivers(){
+      main.innerHTML = ``
+      Items.orderByChild("Type1").equalTo("Pris").on("child_added",visAlleItems);
+      Items.orderByChild("Type2").equalTo("Doc").on("chld_added",visAlleItems);
+    }
+    function visTshirts(){
+      main.innerHTML = ``
+      Items.orderByChild("Type1").equalTo("Pris").on("child_added",visAlleItems);
+      Items.orderByChild("Type2").equalTo("Merch").on("child_added",visAlleItems);
+      Items.orderByChild("Type3").equalTo("Doc").on("chld_added",visAlleItems);
+    }
+
+
+
+
+</script>
+
+
+
+
+
+  </body>
+</html>

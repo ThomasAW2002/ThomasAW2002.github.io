@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Doctor Who</title>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB5gi_QeybvWTGtj2szMfqLwu5FRingF1Y",
+        authDomain: "doctor-who-ef38d.firebaseapp.com",
+        databaseURL: "https://doctor-who-ef38d.firebaseio.com",
+        projectId: "doctor-who-ef38d",
+        storageBucket: "",
+        messagingSenderId: "854602457985"
+      };
+      firebase.initializeApp(config);
+    </script>
+<link rel="stylesheet" href="indexstylesheet.css">
+</head>
+
+
+  <header>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <body>
+
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large"
+    onclick="w3_close()">Close &times;</button>
+    <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="Shop.html" class="w3-bar-item w3-button">Shop</a>
+    <a href="Explore.html" class="w3-bar-item w3-button">Explore 3</a>
+    <a href="AboutUs.html" class="w3-bar-item w3-button">About Us</a>
+
+  </div>
+
+  <div id="main">
+
+  <div class="w3-teal">
+    <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+    <div class="w3-container">
+      <h1>Doctor Who</h1>
+    </div>
+  </div>
+
+  </div>
+
+  <script>
+  function w3_open() {
+    document.getElementById("main").style.marginLeft = "25%";
+    document.getElementById("mySidebar").style.width = "25%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
+  }
+  function w3_close() {
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("openNav").style.display = "inline-block";
+  }
+  </script>
+
+    </header>
+
+    <body>
+
+  <main>
+  <hr>
+</header>
+
+
+<hr>
+
+
+
+  <body>
+
+    <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="drWho.jpg" style="width:100%">
+  </div>
+    </div>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+  <img src="12th Doc.jpg" style="width:100%">
+</div>
+  </div>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+      <img src="Ninth Doc.jpg" style="width:100%">
+    </div>
+  </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+
+<script type="text/javascript">
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+  <div class="main">
+
+  <hr>
+
+  <h2>MORE STUFF</h2>
+
+
+
+<main>
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <img src="11th Screwdriver.jpg" alt="Scrwdrivers" style="width:100%">
+        <a href="Screwdrivers.html">Link her</a>
+        <h3>Screwdrivers</h3>
+        <p>Lorem ipsum..</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="" alt="Cupps" style="width:100%">
+        <a href="#">Link her</a>
+        <h3>Cupps</h3>
+        <p>Lorem ipsum..</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="Daleks.jpg" alt="Daleks" style="width:100%">
+        <a href="#">Link her</a>
+        <h3>Fun Facts</h3>
+        <p>Lorem ipsum..</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="content">
+        <img src="10th Doc.jpg" alt="Charcters" style="width:100%">
+        <a href="Explore.html">Link her</a>
+        <h3>Charcters</h3>
+        <p>Lorem ipsum..</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <img src="bear.jpg" alt="Bear" style="width:100%">
+    <h3>Some Other Work</h3>
+    <p>Lorem ipsum..</p>
+  </div>
+  </div>
+</main>
+
+<footer>
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="Ninth Doc.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="10th Doc" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="12th Doc" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+</footer>
+
+  </body>
+</html>
