@@ -52,7 +52,7 @@
       }
 
 
-      pokemon
+    pokemon
         .orderByChild("Max HP")
         .limitToLast(5)
         .on("child_added",visPokemon);

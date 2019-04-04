@@ -5,19 +5,21 @@
     <title>Doctor Who</title>
 
 
-    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyB5gi_QeybvWTGtj2szMfqLwu5FRingF1Y",
-        authDomain: "doctor-who-ef38d.firebaseapp.com",
-        databaseURL: "https://doctor-who-ef38d.firebaseio.com",
-        projectId: "doctor-who-ef38d",
-        storageBucket: "",
-        messagingSenderId: "854602457985"
-      };
-      firebase.initializeApp(config);
-    </script>
+
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAcwmGhyJjBnCXCzn8J3wdbVw3yMzyoIL4",
+    authDomain: "doctor-who-characters.firebaseapp.com",
+    databaseURL: "https://doctor-who-characters.firebaseio.com",
+    projectId: "doctor-who-characters",
+    storageBucket: "doctor-who-characters.appspot.com",
+    messagingSenderId: "584686465549"
+  };
+  firebase.initializeApp(config);
+</script>
+
 <link rel="stylesheet" href="Stylesheet0.css">
   </head>
 
@@ -31,7 +33,7 @@
   onclick="w3_close()">Close &times;</button>
   <a href="index.html" class="w3-bar-item w3-button">Home</a>
   <a href="Shop.html" class="w3-bar-item w3-button">Shop</a>
-  <a href="Explore.html" class="w3-bar-item w3-button">Explore 3</a>
+  <a href="Explore.html" class="w3-bar-item w3-button">Explore </a>
   <a href="AboutUs.html" class="w3-bar-item w3-button">About Us</a>
 
 </div>
@@ -73,15 +75,13 @@ function w3_close() {
 
 
   <body>
-    <main>
 
-    </main>
-      <script>
+    <script>
           const main = document.querySelector("main"); // Variabel som referer til mian-elementet
 
             // Referanser til databasen
           const db = firebase.database();
-          const Items = db.ref("varer"); // Referer til alt som ligger under sko i databasen
+          const Items = db.ref("DocCharacters"); // Referer til alt som ligger under sko i databasen
 
           function visAlleItems(snapshot){
                 //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
@@ -92,8 +92,8 @@ function w3_close() {
               main.innerHTML +=`
                   <article class="Item">
                     <h1>${varerSnap.Name}</h1>
-                    <img src="${varerSnap.ImageURL}" alt="">
-                    <p>${varerSnap.modell} - ${varerSnap.pris}</p>
+                    <img src="${ItemSnap.ImageURL}" alt="">
+                    <p>${ItemSnap.modell} - ${ItemSnap.pris}</p>
                     <a href="ShopItems.html.html?id=${key}">Les mer</a>
                   </article>
               `;

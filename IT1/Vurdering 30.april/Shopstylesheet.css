@@ -3,6 +3,10 @@
 li a:hover {
   background-color: black;
 }
+
+li{
+  text-align: center;
+}
 main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -12,8 +16,13 @@ main{
 
 
 .varer{
-  background-color: grey;
+  background-image: linear-gradient(white,gray);
   align-items: center;
+  color: white;
+}
+
+.hover{
+
 }
 
 html{

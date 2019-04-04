@@ -33,7 +33,7 @@
     onclick="w3_close()">Close &times;</button>
     <a href="index.html" class="w3-bar-item w3-button">Home</a>
     <a href="Shop.html" class="w3-bar-item w3-button">Shop</a>
-    <a href="Explore.html" class="w3-bar-item w3-button">Explore 3</a>
+    <a href="Explore.html" class="w3-bar-item w3-button">Explore </a>
     <a href="AboutUs.html" class="w3-bar-item w3-button">About Us</a>
 
   </div>
@@ -67,7 +67,7 @@
   <button type="visAlleItems" name="button">Reset</button>
   <button type="visCoasters" name="button">Coasters</button>
   <button type="visTshirts" name="button">T-shirts</button>
-  <button type="visPillows" name="button">pillows</button>
+  <button type="visPillows" name="button">Pillows</button>
   <button type="visScrewdrivers" name="button">Screwdrivers</button>
 
 
@@ -80,6 +80,7 @@
 
 </main>
 <hr>
+
 <script>
 
     const main = document.querySelector("main"); // Variabel som referer til mian-elementet
@@ -103,6 +104,14 @@
         console.log(key);
         console.log(ItemSnap);
 
+        // koden som henter key-verdien fra forrige side:
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var id = url.searchParams.get("id");
+
+
+
+
         let modell = "";
         if(ItemSnap.modell){
           modell = `<p>Modell: ${ItemSnap.modell}</p>`
@@ -111,6 +120,8 @@
         if(ItemSnap.merke){
           merke = `<p>Merke: ${ItemSnap.merke}</p>`
         }
+
+
 
         main.innerHTML +=`
         <a href="ShopItems.html?id=${key}">
@@ -125,6 +136,7 @@
             </a>
         `;
     }
+
 
     // Kjører når nettsiden lastes
       visAlle();
@@ -149,7 +161,6 @@
 
     function visPillows(){
       main.innerHTML = ``;
-      Pillows.on("child_added",visPillows);
       Items.orderByChild("Type1").equalTo("Pris").on("child_added",visAlleItems);
       Items.orderByChild("Type2").equalTo("Merch").on("child_added",visAlleItems);
       Items.orderByChild("Type3").equalTo("Doc").on("chld_added",visAlleItems);
@@ -167,9 +178,11 @@
     }
 
 
-
-
 </script>
+
+
+
+
 
 
 

@@ -12,10 +12,6 @@ header{
 
 * {box-sizing:border-box}
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
 
 /* Slideshow container */
 .slideshow-container {
@@ -62,9 +58,9 @@ header{
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 5s;
 }
 
 @-webkit-keyframes fade {
