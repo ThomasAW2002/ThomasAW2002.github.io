@@ -21,8 +21,16 @@ main{
   color: white;
 }
 
-.hover{
+main a{
+  transition: 0.2s;
+  text-decoration: none;
+}
+a *{
+  text-decoration: none;
+}
 
+main a:hover{
+  transform: scale(1.1);
 }
 
 html{

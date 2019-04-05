@@ -92,7 +92,7 @@
     const Tshirts = db.ref("varer/Tshirts");
     const Pillows = db.ref("varer/Pillows");
     const Coasters = db.ref("varer/Coasters");
-    const Scrwdrivers = db.ref("varer/Screwdrivers");
+    const Screwdrivers = db.ref("varer/Screwdrivers");
 
 
 
@@ -152,30 +152,29 @@
 
 
 
+    function visMugs(){
+      main.innerHTML = ``
+      Mugs.on("child_added",visAlleItems);
+        }
     function visCoasters(){
       main.innerHTML = ``
-      Items.orderByChild("Type1").equalTo("Pris").on("child_added",visAlleItems);
-      Items.orderByChild("Type2").equalTo("Merch").on("child_added",visAlleItems);
-      Items.orderByChild("Type3").equalTo("Doc").on("chld_added",visAlleItems);
+      Coasters.on("child_added",visAlleItems);
     }
+
 
     function visPillows(){
       main.innerHTML = ``;
-      Items.orderByChild("Type1").equalTo("Pris").on("child_added",visAlleItems);
-      Items.orderByChild("Type2").equalTo("Merch").on("child_added",visAlleItems);
-      Items.orderByChild("Type3").equalTo("Doc").on("chld_added",visAlleItems);
-    }
+        Pillows.on("child_added",visAlleItems);
+      }
+
     function visScrewdrivers(){
-      main.innerHTML = ``
-      Items.orderByChild("Type1").equalTo("Pris").on("child_added",visAlleItems);
-      Items.orderByChild("Type2").equalTo("Doc").on("chld_added",visAlleItems);
-    }
+        Pillows.on("child_added",visAlleItems);
+      }
+
     function visTshirts(){
       main.innerHTML = ``
-      Items.orderByChild("Type1").equalTo("Pris").on("child_added",visAlleItems);
-      Items.orderByChild("Type2").equalTo("Merch").on("child_added",visAlleItems);
-      Items.orderByChild("Type3").equalTo("Doc").on("chld_added",visAlleItems);
-    }
+        Tshirts.on("child_added",visAlleItems);
+        }
 
 
 </script>

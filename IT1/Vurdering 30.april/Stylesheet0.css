@@ -28,4 +28,14 @@ li a:hover {
 main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+main img{
+  width: 100%;
+}
+main article{
+  transition: 0.2s;
+}
+main article:hover{
+  transform: scale(1.1);
 }

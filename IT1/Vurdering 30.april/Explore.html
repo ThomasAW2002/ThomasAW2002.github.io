@@ -6,27 +6,28 @@
 
 
 
-<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAcwmGhyJjBnCXCzn8J3wdbVw3yMzyoIL4",
-    authDomain: "doctor-who-characters.firebaseapp.com",
-    databaseURL: "https://doctor-who-characters.firebaseio.com",
-    projectId: "doctor-who-characters",
-    storageBucket: "doctor-who-characters.appspot.com",
-    messagingSenderId: "584686465549"
-  };
-  firebase.initializeApp(config);
-</script>
 
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAcwmGhyJjBnCXCzn8J3wdbVw3yMzyoIL4",
+        authDomain: "doctor-who-characters.firebaseapp.com",
+        databaseURL: "https://doctor-who-characters.firebaseio.com",
+        projectId: "doctor-who-characters",
+        storageBucket: "doctor-who-characters.appspot.com",
+        messagingSenderId: "584686465549"
+      };
+      firebase.initializeApp(config);
+    </script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="Stylesheet0.css">
   </head>
-
+<body>
 <nav>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
+
+
 
 <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large"
@@ -66,15 +67,17 @@ function w3_close() {
 </nav>
 
   <header>
-<button onclick="visAlle">Show all</button>
-<button onclick="visAlleFiender">Enemy's</button>
-<button onclick="visAlleAllierte">Friends</button>
+<button onclick="visAlle()">Show all</button>
+<button onclick="visAlleFiender()">Enemies</button>
+<button onclick="visAlleFriends()">Friends</button>
 
 
   </header>
 
 
-  <body>
+  <main>
+
+  </main>
 
     <script>
           const main = document.querySelector("main"); // Variabel som referer til mian-elementet
@@ -82,18 +85,21 @@ function w3_close() {
             // Referanser til databasen
           const db = firebase.database();
           const Items = db.ref("DocCharacters"); // Referer til alt som ligger under sko i databasen
+          const Enemies = db.ref("Characters/Enemies");
+          const Friends = db.ref("Characters/Friends");
+          const Doctors = db.ref("Characters/Doctors");
 
           function visAlleItems(snapshot){
                 //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
-              let itemSnap = snapshot.val();
-              console.log(itemSnap);
+              let ItemSnap = snapshot.val();
+              console.log(ItemSnap);
               let key = snapshot.key;
-
+              console.log(key);
               main.innerHTML +=`
                   <article class="Item">
-                    <h1>${ItemSnap.Name}</h1>
+                    <h1>${ItemSnap.name}</h1>
                     <img src="${ItemSnap.ImageURL}" alt="">
-                    <p>${ItemSnap.modell} - ${ItemSnap.pris}</p>
+                    <p>${ItemSnap.Story}</p>
                     <a href="ShopItems.html.html?id=${key}">Les mer</a>
                   </article>
               `;
@@ -101,30 +107,27 @@ function w3_close() {
 
           function visAlle(){
             main.innerHTML = ``
-            Item.on("child_added",visAlleItems);
+            Friends.on("child_added",visAlleItems);
+            Enemies.on("child_added",visAlleItems);
+            Doctors.on("child_added",visAlleItems);
           }
 
           visAlle();
 
-          function visAlleAllierte(){
+          function visAlleFriends(){
             main.innerHTML = ``
-            Items.orderByChild("Type1").equalTo("").on("child_added",visAlleItems);
-            Items.orderByChild("Type2").equalTo("").on("child_added",visAlleItems);
-            Items.orderByChild("Type3").equalTo("").on("chld_added",visAlleItems);
-          }
-
-          function visAlleAllierte(){
-            main.innerHTML = ``
-            Items.orderByChild("Type1").equalTo("").on("child_added",visAlleItems);
-            Items.orderByChild("Type2").equalTo("").on("child_added",visAlleItems);
-            Items.orderByChild("Type3").equalTo("").on("chld_added",visAlleItems);
+            Friends.on("child_added",visAlleItems)
           }
 
           function visAlleFiender(){
             main.innerHTML = ``
-            Items.orderByChild("Type1").equalTo("").on("child_added",visAlleItems);
-            Items.orderByChild("Type2").equalTo("").on("child_added",visAlleItems);
-            Items.orderByChild("Type3").equalTo("").on("chld_added",visAlleItems);
+            main.innerHTML = ``
+            Enemies.on("child_added",visAlleItems)
+          }
+
+          function visAlleDoctors(){
+            main.innerHTML = ``
+            Doctors.on("child_added",visAlleItems)
           }
 
 
