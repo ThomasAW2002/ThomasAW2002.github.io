@@ -91,7 +91,7 @@ function w3_close() {
 
               main.innerHTML +=`
                   <article class="Item">
-                    <h1>${varerSnap.Name}</h1>
+                    <h1>${ItemSnap.Name}</h1>
                     <img src="${ItemSnap.ImageURL}" alt="">
                     <p>${ItemSnap.modell} - ${ItemSnap.pris}</p>
                     <a href="ShopItems.html.html?id=${key}">Les mer</a>
@@ -106,7 +106,7 @@ function w3_close() {
 
           visAlle();
 
-          function visAlleFiender(){
+          function visAlleAllierte(){
             main.innerHTML = ``
             Items.orderByChild("Type1").equalTo("").on("child_added",visAlleItems);
             Items.orderByChild("Type2").equalTo("").on("child_added",visAlleItems);
