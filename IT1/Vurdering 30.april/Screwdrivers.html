@@ -88,10 +88,10 @@
     const db = firebase.database();
     const Items = db.ref("varer"); // Referer til alt som ligger under sko i databasen
     const Mugs = db.ref("varer/Mugs");
-    const Tshirts = db.ref("varer/Tshirts");
+    const Tshirt = db.ref("varer/Tshirt");
     const Pillows = db.ref("varer/Pillows");
-    const Coasters = db.ref("varer/Coasters");
-    const Scrwdrivers = db.ref("varer/Screwdrivers");
+    const Coaster = db.ref("varer/Coaster");
+    const Screwdrivers = db.ref("varer/Screwdriver");
 
 
 
@@ -103,6 +103,14 @@
         console.log(key);
         console.log(ItemSnap);
 
+        // koden som henter key-verdien fra forrige side:
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var id = url.searchParams.get("id");
+
+
+
+
         let modell = "";
         if(ItemSnap.modell){
           modell = `<p>Modell: ${ItemSnap.modell}</p>`
@@ -111,6 +119,8 @@
         if(ItemSnap.merke){
           merke = `<p>Merke: ${ItemSnap.merke}</p>`
         }
+
+
 
         main.innerHTML +=`
         <a href="ShopItems.html?id=${key}">
@@ -126,50 +136,48 @@
         `;
     }
 
+
     // Kjører når nettsiden lastes
-      visScrewdrivers();
+      visScrewdriver();
 
       function visAlle(){
       main.innerHTML = ``
       Mugs.on("child_added",visAlleItems);
-      Tshirts.on("child_added",visAlleItems);
+      Tshirt.on("child_added",visAlleItems);
       Pillows.on("child_added",visAlleItems);
-      Coasters.on("child_added",visAlleItems);
-      Screwdrivers.on("child_added",visAlleItems);
+      Coaster.on("child_added",visAlleItems);
+      Screwdriver.on("child_added",visAlleItems);
     }
 
 
 
-    function visCoasters(){
+    function visMugs(){
       main.innerHTML = ``
-      Items.orderByChild("Type1").equalTo("Pris").on("child_added",visAlleItems);
-      Items.orderByChild("Type2").equalTo("Merch").on("child_added",visAlleItems);
-      Items.orderByChild("Type3").equalTo("Doc").on("chld_added",visAlleItems);
+      Mugs.on("child_added",visAlleItems);
+        }
+    function visCoaster(){
+      main.innerHTML = ``
+      Coaster.on("child_added",visAlleItems);
     }
+
 
     function visPillows(){
-      main.innerHTML = ``;
-      Items.orderByChild("Type1").equalTo("Pris").on("child_added",visAlleItems);
-      Items.orderByChild("Type2").equalTo("Merch").on("child_added",visAlleItems);
-      Items.orderByChild("Type3").equalTo("Doc").on("chld_added",visAlleItems);
-    }
-    function visScrewdrivers(){
       main.innerHTML = ``
-      Items.orderByChild("Type1").equalTo("Pris").on("child_added",visAlleItems);
-      Items.orderByChild("Type2").equalTo("Doc").on("chld_added",visAlleItems);
-    }
-    function visTshirts(){
+        Pillows.on("child_added",visAlleItems);
+      }
+
+    function visScrewdriver(){
       main.innerHTML = ``
-      Items.orderByChild("Type1").equalTo("Pris").on("child_added",visAlleItems);
-      Items.orderByChild("Type2").equalTo("Merch").on("child_added",visAlleItems);
-      Items.orderByChild("Type3").equalTo("Doc").on("chld_added",visAlleItems);
-    }
+        Screwdrivers.on("child_added",visAlleItems);
+      }
 
-
+    function visTshirt(){
+      main.innerHTML = ``
+        Tshirt.on("child_added",visAlleItems);
+        }
 
 
 </script>
-
 
 
 

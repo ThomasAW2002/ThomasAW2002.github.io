@@ -64,11 +64,11 @@
   </script>
 
 
-  <button type="visAlleItems" name="button">Reset</button>
-  <button type="visCoasters" name="button">Coasters</button>
-  <button type="visTshirts" name="button">T-shirts</button>
-  <button type="visPillows" name="button">Pillows</button>
-  <button type="visScrewdrivers" name="button">Screwdrivers</button>
+  <button onclick="visAlle()" name="button">Show All</button>
+  <button onclick="visCoaster()" name="button">Coasters</button>
+  <button onclick="visTshirt()" name="button">T-shirts</button>
+  <button onclick="visPillows()" name="button">Pillows</button>
+  <button onclick="visScrewdriver()" name="button">Screwdrivers</button>
 
 
 
@@ -89,10 +89,10 @@
     const db = firebase.database();
     const Items = db.ref("varer"); // Referer til alt som ligger under sko i databasen
     const Mugs = db.ref("varer/Mugs");
-    const Tshirts = db.ref("varer/Tshirts");
+    const Tshirt = db.ref("varer/tshirt");
     const Pillows = db.ref("varer/Pillows");
-    const Coasters = db.ref("varer/Coasters");
-    const Screwdrivers = db.ref("varer/Screwdrivers");
+    const Coaster = db.ref("varer/Coaster");
+    const Screwdriver = db.ref("varer/Screwdriver");
 
 
 
@@ -144,10 +144,10 @@
       function visAlle(){
       main.innerHTML = ``
       Mugs.on("child_added",visAlleItems);
-      Tshirts.on("child_added",visAlleItems);
+      Tshirt.on("child_added",visAlleItems);
       Pillows.on("child_added",visAlleItems);
-      Coasters.on("child_added",visAlleItems);
-      Screwdrivers.on("child_added",visAlleItems);
+      Coaster.on("child_added",visAlleItems);
+      Screwdriver.on("child_added",visAlleItems);
     }
 
 
@@ -156,36 +156,29 @@
       main.innerHTML = ``
       Mugs.on("child_added",visAlleItems);
         }
-    function visCoasters(){
+    function visCoaster(){
       main.innerHTML = ``
-      Coasters.on("child_added",visAlleItems);
+      Coaster.on("child_added",visAlleItems);
     }
 
 
     function visPillows(){
-      main.innerHTML = ``;
-        Pillows.on("child_added",visAlleItems);
-      }
-
-    function visScrewdrivers(){
-        Pillows.on("child_added",visAlleItems);
-      }
-
-    function visTshirts(){
       main.innerHTML = ``
-        Tshirts.on("child_added",visAlleItems);
+        Pillows.on("child_added",visAlleItems);
+      }
+
+    function visScrewdriver(){
+      main.innerHTML = ``
+        Screwdriver.on("child_added",visAlleItems);
+      }
+
+    function visTshirt(){
+      main.innerHTML = ``
+        Tshirt.on("child_added",visAlleItems);
         }
 
 
 </script>
 
-
-
-
-
-
-
-
-
-  </body>
+</body>
 </html>
