@@ -11,23 +11,47 @@
       "Rødbeter":{},
       "Ingefær":{},
       "Nepe":{},
-      "Sellerirot":{},
+      "Sellerirot":{}
     },
-    "Grønnsaker":{
-      "Augurk":{},
-      "Avokado":{},
-      "Brokoli":{},
-      "Paprika":{},
-      "Bananer":{},
-      "Chili":{},
-      "Ingefær":{},
-      "F"
-    },
+      "Grønnsaker":{
+        "Augurk":{},
+        "Avokado":{},
+        "Brokoli":{},
+        "Paprika":{},
+        "Chili":{},
+        "Ingefær":{}
+      },
     "Frukt":{
-      ""
-    },
+      "Appelsiner":{
+        "App001":{},
+        "App002":{},
+        "App003":{}
+      },
+      "Bananer":{
+        "Ban001":{},
+        "Ban002":{},
+        "Ban003":{}
+      },
+      "Epler":{
+        "Epl001":{},
+        "Epl002":{},
+        "Epl003":{}
+      },
+      "Pærer":{
+        "Pær001":{},
+        "Pær002":{},
+        "Pær003":{}
+      },
+      "Druer":{
+        "Dru001":{},
+        "Dru002":{},
+        "Dru003":{}
+       }
+      },
     "Potet":{
-
+    "Pot001":{},
+    "Pot002":{},
+    "Pot003":{}
     }
   }
 }
