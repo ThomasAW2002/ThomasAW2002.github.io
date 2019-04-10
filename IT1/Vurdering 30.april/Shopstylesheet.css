@@ -13,6 +13,9 @@ main{
   grid-gap: 50px;
   padding: 15px;
 }
+img{
+  width: 100%;
+}
 
 
 .varer{

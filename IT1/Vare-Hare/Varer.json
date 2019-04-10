@@ -1,0 +1,33 @@
+{
+  "varer":{
+    "Rot":{
+      "Gulrot":{
+        "G001":{},
+        "G002":{},
+        "G002":{}
+      },
+      "Blomkål":{},
+      "Søtpotet":{},
+      "Rødbeter":{},
+      "Ingefær":{},
+      "Nepe":{},
+      "Sellerirot":{},
+    },
+    "Grønnsaker":{
+      "Augurk":{},
+      "Avokado":{},
+      "Brokoli":{},
+      "Paprika":{},
+      "Bananer":{},
+      "Chili":{},
+      "Ingefær":{},
+      "F"
+    },
+    "Frukt":{
+      ""
+    },
+    "Potet":{
+
+    }
+  }
+}
