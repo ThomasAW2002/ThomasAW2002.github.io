@@ -22,7 +22,6 @@
         <a href="Bli Medlem.html" class="w3-bar-item w3-button">Bli Medlem</a>
         <a href="Sammarbeid med oss.html" class="w3-bar-item w3-button">Sammarbeid med oss</a>
 
-
       </div>
 
       <div id="main">
@@ -32,7 +31,7 @@
 
       <nav>
         <a href="#">Om Oss</a>
-        <a href="Bli Medlem.html">Bli Medlem</a>
+        <a href="#">Bli Medlem</a>
 
       </nav>
 
@@ -55,24 +54,39 @@
       }
       </script>
   </header>
-  <body>
-    <h2>Grid of Boxes</h2>
-    <p>Float boxes side by side:</p>
 
-<section id="boxes">
-  <p>Some text inside the box.</p>
+  <body>
+<section id="Hei">
+  <h2>Hva kan vi hjelpe med?</h2>
+  <hr>  
 </section>
-    <div class="clearfix">
-      <div class="box" style="background-color:#bbb">
-      <p>Some text inside the box.</p>
-      </div>
-      <div class="box" style="background-color:#ccc">
-      <p>Some text inside the box.</p>
-      </div>
-      <div class="box" style="background-color:#ddd">
-      <p>Some text inside the box.</p>
-      </div>
-    </div>
+
+
+
+    <div class="container">
+    <form action="action_page.php">
+
+      <label for="fname"></label>
+      <input type="text" id="fname" name="firstname" placeholder="Name..">
+<br>
+<br>
+      <label for="lname"></label>
+      <input type="text" id="lname" name="lastname" placeholder="E-postadresse..">
+<br>
+<br>
+
+    <label for="lname"></label>
+    <input type="text" id="lname" name="lastname" placeholder="Gi meldingen en god tittel..">
+<br>
+<br>
+
+      <label for="subject"></label>
+      <textarea id="subject" name="subject" placeholder="Skriv meldingen din her.." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
 
 
 

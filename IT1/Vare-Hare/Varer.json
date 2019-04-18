@@ -2,56 +2,194 @@
   "varer":{
     "Rot":{
       "Gulrot":{
-        "G001":{},
-        "G002":{},
-        "G003":{}
+        "G001":{
+          "name":"",
+          "ImageURL":"",
+          "tekst":"",
+          "Vekt":,
+          "pris":
+          }
       },
-      "Blomkål":{},
-      "Søtpotet":{},
-      "Rødbeter":{},
-      "Ingefær":{},
-      "Nepe":{},
-      "Sellerirot":{}
+      "Blomkål":{ 
+        "Bl001":{
+          "name":"",
+          "ImageURL":"",
+          "tekst":"",
+          "Vekt":,
+          "pris":
+        }
+      },
+      "Søtpotet":{
+        "Sø001":{
+          "name":"",
+          "ImageURL":"",
+          "tekst":"",
+          "Vekt":,
+          "pris":
+        }
+      },
+      "Rødbeter":{
+        "Rø001":{
+          "name":"",
+          "ImageURL":"",
+          "tekst":"",
+          "Vekt":,
+          "pris":
+        }
+      },
+      "Ingefær":{
+        "In001":{
+          "name":"",
+          "ImageURL":"",
+          "tekst":"",
+          "Vekt":,
+          "pris":
+        }
+      },
+      "Nepe":{
+        "Ne001":{
+          "name":"",
+          "ImageURL":"",
+          "tekst":"",
+          "Vekt":,
+          "pris":
+        }
+      },
+      "Sellerirot":{
+        "Se001":{
+          "name":"",
+          "ImageURL":"",
+          "tekst":"",
+          "Vekt":,
+          "pris":
+        }
+      }
     },
       "Grønnsaker":{
-        "Augurk":{},
-        "Avokado":{},
-        "Brokoli":{},
-        "Paprika":{},
-        "Chili":{},
-        "Ingefær":{}
+        "Augurk":{
+          "Au001":{
+            "name":"",
+            "ImageURL":"",
+            "tekst":"",
+            "Vekt":,
+            "pris":
+          }
+        },
+        "Avokado":{
+          "Av001":{
+            "name":"",
+            "ImageURL":"",
+            "tekst":"",
+            "Vekt":,
+            "pris":
+          }
+        },
+        "Brokoli":{
+          "Br001":{
+            "name":"",
+            "ImageURL":"",
+            "tekst":"",
+            "Vekt":,
+            "pris":
+          }
+        },
+        "Paprika":{
+          "Pa001":{
+            "name":"",
+            "ImageURL":"",
+            "tekst":"",
+            "Vekt":,
+            "pris":
+          }
+        },
+        "Chili":{
+          "Ch001":{
+            "name":"",
+            "ImageURL":"",
+            "tekst":"",
+            "Vekt":,
+            "pris":
+          }
+        },
+        "Ingefær":{
+          "In001":{
+            "name":"",
+            "ImageURL":"",
+            "tekst":"",
+            "Vekt":,
+            "pris":
+          }
+        }
       },
     "Frukt":{
       "Appelsiner":{
-        "App001":{},
-        "App002":{},
-        "App003":{}
+        "App001":{
+          "name":"",
+          "ImageURL":"",
+          "tekst":"",
+          "Vekt":,
+          "pris":
+        },
       },
       "Bananer":{
-        "Ban001":{},
-        "Ban002":{},
-        "Ban003":{}
+        "Ban001":{
+          "name":"",
+          "ImageURL":"",
+          "tekst":"",
+          "Vekt":,
+          "pris":
+        }
       },
       "Epler":{
-        "Epl001":{},
-        "Epl002":{},
-        "Epl003":{}
+        "Epl001":{
+          "name":"",
+          "ImageURL":"",
+          "tekst":"",
+          "Vekt":,
+          "pris":
+        }
       },
       "Pærer":{
-        "Pær001":{},
-        "Pær002":{},
-        "Pær003":{}
+        "Pær001":{
+          "name":"",
+          "ImageURL":"",
+          "tekst":"",
+          "Vekt":,
+          "pris":
+        }
       },
       "Druer":{
-        "Dru001":{},
-        "Dru002":{},
-        "Dru003":{}
+        "Dru001":{
+          "name":"",
+          "ImageURL":"",
+          "tekst":"",
+          "Vekt":,
+          "pris":
+        }
        }
       },
     "Potet":{
-    "Pot001":{},
-    "Pot002":{},
-    "Pot003":{}
+    "Pot001":{
+      "name":"",
+      "ImageURL":"",
+      "tekst":"",
+      "Vekt":,
+      "pris":
+    },
+    "Pot002":{
+      "name":"",
+      "ImageURL":"",
+      "tekst":"",
+      "Vekt":,
+      "pris":
+    },
+    "Pot003":{
+      "name":"",
+      "ImageURL":"",
+      "tekst":"",
+      "Vekt":,
+      "pris":
+    }
     }
   }
 }

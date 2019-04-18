@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  height: 300px;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  display: grid;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  position: static;
+}
+#boxes{
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  display: grid;
+}
