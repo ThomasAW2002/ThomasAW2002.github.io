@@ -4,8 +4,7 @@ li a:hover {
 }
 
 header{
-  grid-column-gap: 50px;
-  display: grid;
+
 }
 
 #myHeader {

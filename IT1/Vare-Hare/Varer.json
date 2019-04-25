@@ -2,194 +2,292 @@
   "varer":{
     "Rot":{
       "Gulrot":{
-        "G001":{
-          "name":"",
+          "name":"Gulrot",
           "ImageURL":"",
           "tekst":"",
-          "Vekt":,
-          "pris":
-          }
+          "Vekt": 1,
+          "pris": 11
       },
-      "Blomkål":{ 
-        "Bl001":{
-          "name":"",
+      "Blomkaal":{
+          "name":"Blomkål",
           "ImageURL":"",
           "tekst":"",
-          "Vekt":,
-          "pris":
-        }
+          "Vekt": 1,
+          "pris": 23
       },
-      "Søtpotet":{
-        "Sø001":{
-          "name":"",
+      "Rodbeter":{
+          "name":"Rødbeter",
           "ImageURL":"",
           "tekst":"",
-          "Vekt":,
-          "pris":
-        }
+          "Vekt": 1,
+          "pris": 17
       },
-      "Rødbeter":{
-        "Rø001":{
-          "name":"",
+      "Ingefaer":{
+          "name":"Ingefær",
           "ImageURL":"",
           "tekst":"",
-          "Vekt":,
-          "pris":
-        }
-      },
-      "Ingefær":{
-        "In001":{
-          "name":"",
-          "ImageURL":"",
-          "tekst":"",
-          "Vekt":,
-          "pris":
-        }
+          "Vekt": 1,
+          "pris": 10
       },
       "Nepe":{
-        "Ne001":{
-          "name":"",
-          "ImageURL":"",
+          "name":"Nepe",
+          "ImageURL":"Nepe",
           "tekst":"",
-          "Vekt":,
-          "pris":
-        }
+          "Vekt": 1,
+          "pris": 20
       },
       "Sellerirot":{
-        "Se001":{
-          "name":"",
-          "ImageURL":"",
+          "name":"Sellerirot",
+          "ImageURL":"Sellerirot",
           "tekst":"",
-          "Vekt":,
-          "pris":
-        }
+          "Vekt": 1,
+          "pris": 33
       }
     },
-      "Grønnsaker":{
-        "Augurk":{
-          "Au001":{
-            "name":"",
+    "Gronnsaker":{
+        "Agurk":{
+            "name":"Agurk",
             "ImageURL":"",
             "tekst":"",
-            "Vekt":,
-            "pris":
-          }
+            "Vekt": 1,
+            "pris": 23
         },
         "Avokado":{
-          "Av001":{
-            "name":"",
+            "name":"Avokado",
             "ImageURL":"",
             "tekst":"",
-            "Vekt":,
-            "pris":
-          }
+            "Vekt": 1,
+            "pris": 25
         },
-        "Brokoli":{
-          "Br001":{
-            "name":"",
+        "Brokkoli":{
+            "name":"Brokkoli",
             "ImageURL":"",
             "tekst":"",
-            "Vekt":,
-            "pris":
-          }
+            "Vekt": 1,
+            "pris": 28
         },
         "Paprika":{
-          "Pa001":{
-            "name":"",
+            "name":"Paprika",
             "ImageURL":"",
             "tekst":"",
-            "Vekt":,
-            "pris":
-          }
+            "Vekt": 1,
+            "pris": 19
         },
         "Chili":{
-          "Ch001":{
-            "name":"",
+            "name":"Chili",
             "ImageURL":"",
             "tekst":"",
-            "Vekt":,
-            "pris":
-          }
-        },
-        "Ingefær":{
-          "In001":{
-            "name":"",
-            "ImageURL":"",
-            "tekst":"",
-            "Vekt":,
-            "pris":
-          }
+            "Vekt": 1,
+            "pris": 7
         }
       },
     "Frukt":{
       "Appelsiner":{
-        "App001":{
-          "name":"",
+          "name":"Appelsiner",
           "ImageURL":"",
           "tekst":"",
-          "Vekt":,
-          "pris":
-        },
+          "Vekt": 1,
+          "pris": 11
       },
       "Bananer":{
-        "Ban001":{
-          "name":"",
+          "name":"Bananer",
           "ImageURL":"",
           "tekst":"",
-          "Vekt":,
-          "pris":
-        }
+          "Vekt": 1,
+          "pris": 6
       },
       "Epler":{
-        "Epl001":{
-          "name":"",
+          "name":"Epler",
           "ImageURL":"",
           "tekst":"",
-          "Vekt":,
-          "pris":
-        }
+          "Vekt": 1,
+          "pris": 10
       },
-      "Pærer":{
-        "Pær001":{
-          "name":"",
+      "Paerer":{
+          "name":"Pærer",
           "ImageURL":"",
           "tekst":"",
-          "Vekt":,
-          "pris":
-        }
-      },
+          "Vekt": 1,
+          "pris": 14
+        },
       "Druer":{
-        "Dru001":{
-          "name":"",
+          "name":"Druer",
           "ImageURL":"",
           "tekst":"",
-          "Vekt":,
-          "pris":
+          "Vekt": 1,
+          "pris": 12
         }
-       }
       },
-    "Potet":{
     "Pot001":{
-      "name":"",
+      "name":"Ratte Peat",
       "ImageURL":"",
       "tekst":"",
-      "Vekt":,
-      "pris":
+      "Vekt": 1,
+      "pris": 50
     },
     "Pot002":{
-      "name":"",
+      "name":"Vildemose",
       "ImageURL":"",
       "tekst":"",
-      "Vekt":,
-      "pris":
+      "Vekt": 1,
+      "pris": 44
     },
     "Pot003":{
-      "name":"",
+      "name":"Fjellmandel",
       "ImageURL":"",
       "tekst":"",
-      "Vekt":,
-      "pris":
+      "Vekt": 1,
+      "pris": 40
+    },
+    "Pot004":{
+      "name":"Søtpotet",
+      "ImageURL":"",
+      "tekst":"",
+      "Vekt": 1,
+      "pris": 17
+      }
+  },
+  "handlekurv": {
+    "Gulrot":{
+        "name":"Gulrot",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 11
+    },
+    "Blomkaal":{
+        "name":"Blomkål",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 23
+    },
+    "Rodbeter":{
+        "name":"Rødbeter",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 17
+    },
+    "Ingefaer":{
+        "name":"Ingefær",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 10
+    },
+    "Nepe":{
+        "name":"Nepe",
+        "ImageURL":"Nepe",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 20
+    },
+    "Sellerirot":{
+        "name":"Sellerirot",
+        "ImageURL":"Sellerirot",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 33
+    },
+    "Agurk":{
+        "name":"Agurk",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 23
+    },
+    "Avokado":{
+        "name":"Avokado",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 25
+    },
+    "Brokkoli":{
+        "name":"Brokkoli",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 28
+    },
+    "Paprika":{
+        "name":"Paprika",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 19
+    },
+    "Chili":{
+        "name":"Chili",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 7
+    },
+    "Appelsiner":{
+        "name":"Appelsiner",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 11
+    },
+    "Bananer":{
+        "name":"Bananer",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 6
+    },
+    "Epler":{
+        "name":"Epler",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 10
+    },
+    "Paerer":{
+        "name":"Pærer",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 14
+      },
+    "Druer":{
+        "name":"Druer",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 12
+      },
+      "Pot001":{
+        "name":"Ratte Peat",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 50
+      },
+
+      "Pot002":{
+        "name":"Vildemose",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 44
+      },
+      "Pot003":{
+        "name":"Fjellmandel",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 40
+      },
+      "Pot004":{
+        "name":"Søtpotet",
+        "ImageURL":"",
+        "tekst":"",
+        "Vekt": 1,
+        "pris": 17
+        }
+      }
     }
-    }
-  }
-}
