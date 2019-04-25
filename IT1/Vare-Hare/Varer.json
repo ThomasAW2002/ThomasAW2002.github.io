@@ -3,42 +3,42 @@
     "Rot":{
       "Gulrot":{
           "name":"Gulrot",
-          "ImageURL":"",
+          "ImageURL":"Bilder/Handlekurv/Gulrøtter.jpg",
           "tekst":"",
           "Vekt": 1,
           "pris": 11
       },
       "Blomkaal":{
           "name":"Blomkål",
-          "ImageURL":"",
+          "ImageURL":"Bilder/Handlekurv/Blomkaal.jpg",
           "tekst":"",
           "Vekt": 1,
           "pris": 23
       },
       "Rodbeter":{
           "name":"Rødbeter",
-          "ImageURL":"",
+          "ImageURL":"Bilder/Handlekurv/Rodbeter.jpg",
           "tekst":"",
           "Vekt": 1,
           "pris": 17
       },
       "Ingefaer":{
           "name":"Ingefær",
-          "ImageURL":"",
+          "ImageURL":"Bilder/Handlekurv/Ingefaer",
           "tekst":"",
           "Vekt": 1,
           "pris": 10
       },
       "Nepe":{
           "name":"Nepe",
-          "ImageURL":"Nepe",
+          "ImageURL":"Bilder/Handlekurv/Nepe.png",
           "tekst":"",
           "Vekt": 1,
           "pris": 20
       },
       "Sellerirot":{
           "name":"Sellerirot",
-          "ImageURL":"Sellerirot",
+          "ImageURL":"Bilder/Handlekurv/Sellerirot.jpg",
           "tekst":"",
           "Vekt": 1,
           "pris": 33
@@ -47,35 +47,35 @@
     "Gronnsaker":{
         "Agurk":{
             "name":"Agurk",
-            "ImageURL":"",
+            "ImageURL":"Bilder/Handlekurv/Agurk.jpg",
             "tekst":"",
             "Vekt": 1,
             "pris": 23
         },
         "Avokado":{
             "name":"Avokado",
-            "ImageURL":"",
+            "ImageURL":"Bilder/Handlekurv/Avokado.jpg",
             "tekst":"",
             "Vekt": 1,
             "pris": 25
         },
         "Brokkoli":{
             "name":"Brokkoli",
-            "ImageURL":"",
+            "ImageURL":"Bilder/Handlekurv/Brokkoli.jpg",
             "tekst":"",
             "Vekt": 1,
             "pris": 28
         },
         "Paprika":{
             "name":"Paprika",
-            "ImageURL":"",
+            "ImageURL":"Bilder/Handlekurv/Paprika.jpg",
             "tekst":"",
             "Vekt": 1,
             "pris": 19
         },
         "Chili":{
-            "name":"Chili",
-            "ImageURL":"",
+            "name":"Chilipe",
+            "ImageURL":"Bilder/Handlekurv/Chilipepper.jpg",
             "tekst":"",
             "Vekt": 1,
             "pris": 7
@@ -84,35 +84,35 @@
     "Frukt":{
       "Appelsiner":{
           "name":"Appelsiner",
-          "ImageURL":"",
+          "ImageURL":"Bilder/Handlekurv/Appelsiner.jpg",
           "tekst":"",
           "Vekt": 1,
           "pris": 11
       },
       "Bananer":{
           "name":"Bananer",
-          "ImageURL":"",
+          "ImageURL":"Bilder/Handlekurv/Bananer.jpg",
           "tekst":"",
           "Vekt": 1,
           "pris": 6
       },
       "Epler":{
           "name":"Epler",
-          "ImageURL":"",
+          "ImageURL":"Bilder/Handlekurv/Epler.jpg",
           "tekst":"",
           "Vekt": 1,
           "pris": 10
       },
       "Paerer":{
           "name":"Pærer",
-          "ImageURL":"",
+          "ImageURL":"Bilder/Handlekurv/Paerer.jpg",
           "tekst":"",
           "Vekt": 1,
           "pris": 14
         },
       "Druer":{
           "name":"Druer",
-          "ImageURL":"",
+          "ImageURL":"Bilder/Handlekurv/Druer.jpg",
           "tekst":"",
           "Vekt": 1,
           "pris": 12
@@ -120,28 +120,28 @@
       },
     "Pot001":{
       "name":"Ratte Peat",
-      "ImageURL":"",
+      "ImageURL":"Ratte Peat.jpg",
       "tekst":"",
       "Vekt": 1,
       "pris": 50
     },
     "Pot002":{
-      "name":"Vildemose",
-      "ImageURL":"",
+      "name":"Amandine",
+      "ImageURL":"Amandine.jpg",
       "tekst":"",
       "Vekt": 1,
       "pris": 44
     },
     "Pot003":{
-      "name":"Fjellmandel",
-      "ImageURL":"",
+      "name":"Asterix",
+      "ImageURL":"Asterix.jpg",
       "tekst":"",
       "Vekt": 1,
       "pris": 40
     },
     "Pot004":{
       "name":"Søtpotet",
-      "ImageURL":"",
+      "ImageURL":"Søtpotet.jpg",
       "tekst":"",
       "Vekt": 1,
       "pris": 17
@@ -150,112 +150,112 @@
   "handlekurv": {
     "Gulrot":{
         "name":"Gulrot",
-        "ImageURL":"",
+        "ImageURL":"Bilder/Handlekurv/Gulrøtter.jpg",
         "tekst":"",
         "Vekt": 1,
         "pris": 11
     },
     "Blomkaal":{
         "name":"Blomkål",
-        "ImageURL":"",
+        "ImageURL":"Bilder/Handlekurv/Blomkaal.jpg",
         "tekst":"",
         "Vekt": 1,
         "pris": 23
     },
     "Rodbeter":{
         "name":"Rødbeter",
-        "ImageURL":"",
+        "ImageURL":"Bilder/Handlekurv/Rodbeter.jpg",
         "tekst":"",
         "Vekt": 1,
         "pris": 17
     },
     "Ingefaer":{
         "name":"Ingefær",
-        "ImageURL":"",
+        "ImageURL":"Bilder/Handlekurv/Ingefaer.jpg",
         "tekst":"",
         "Vekt": 1,
         "pris": 10
     },
     "Nepe":{
         "name":"Nepe",
-        "ImageURL":"Nepe",
+        "ImageURL":"Bilder/Handlekurv/Nepe.png",
         "tekst":"",
         "Vekt": 1,
         "pris": 20
     },
     "Sellerirot":{
         "name":"Sellerirot",
-        "ImageURL":"Sellerirot",
+        "ImageURL":"Bilder/Handlekurv/Sellerirot",
         "tekst":"",
         "Vekt": 1,
         "pris": 33
     },
     "Agurk":{
         "name":"Agurk",
-        "ImageURL":"",
+        "ImageURL":"Bilder/Handlekurv/Agurk.jpg",
         "tekst":"",
         "Vekt": 1,
         "pris": 23
     },
     "Avokado":{
         "name":"Avokado",
-        "ImageURL":"",
+        "ImageURL":"Bilder/Handlekurv/Avokado.jpg",
         "tekst":"",
         "Vekt": 1,
         "pris": 25
     },
     "Brokkoli":{
         "name":"Brokkoli",
-        "ImageURL":"",
+        "ImageURL":"Bilder/Handlekurv/Brokkoli.jpg",
         "tekst":"",
         "Vekt": 1,
         "pris": 28
     },
     "Paprika":{
         "name":"Paprika",
-        "ImageURL":"",
+        "ImageURL":"Bilder/Handlekurv/Paprika.jpg",
         "tekst":"",
         "Vekt": 1,
         "pris": 19
     },
     "Chili":{
         "name":"Chili",
-        "ImageURL":"",
+        "ImageURL":"Bilder/Handlekurv/Chilipepper.jpg",
         "tekst":"",
         "Vekt": 1,
         "pris": 7
     },
     "Appelsiner":{
         "name":"Appelsiner",
-        "ImageURL":"",
+        "ImageURL":"Bilder/Handlekurv/Appelsiner.jpg",
         "tekst":"",
         "Vekt": 1,
         "pris": 11
     },
     "Bananer":{
         "name":"Bananer",
-        "ImageURL":"",
+        "ImageURL":"Bilder/Handlekurv/Bananer.jpg",
         "tekst":"",
         "Vekt": 1,
         "pris": 6
     },
     "Epler":{
         "name":"Epler",
-        "ImageURL":"",
+        "ImageURL":"Bilder/Handlekurv/Epler.jpg",
         "tekst":"",
         "Vekt": 1,
         "pris": 10
     },
     "Paerer":{
         "name":"Pærer",
-        "ImageURL":"",
+        "ImageURL":"Bilder/Handlekurv/Paerer.jpg",
         "tekst":"",
         "Vekt": 1,
         "pris": 14
       },
     "Druer":{
         "name":"Druer",
-        "ImageURL":"",
+        "ImageURL":"Bilder/Handlekurv/Druer.jpg",
         "tekst":"",
         "Vekt": 1,
         "pris": 12
@@ -269,22 +269,22 @@
       },
 
       "Pot002":{
-        "name":"Vildemose",
-        "ImageURL":"",
+        "name":"Amandine",
+        "ImageURL":"Amandine.jpg",
         "tekst":"",
         "Vekt": 1,
         "pris": 44
       },
       "Pot003":{
-        "name":"Fjellmandel",
-        "ImageURL":"",
+        "name":"Asterix",
+        "ImageURL":"Asterix.jpg",
         "tekst":"",
         "Vekt": 1,
         "pris": 40
       },
       "Pot004":{
         "name":"Søtpotet",
-        "ImageURL":"",
+        "ImageURL":"Søtpotet.jpg",
         "tekst":"",
         "Vekt": 1,
         "pris": 17
