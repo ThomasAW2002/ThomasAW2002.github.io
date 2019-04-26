@@ -120,28 +120,28 @@
       },
     "Pot001":{
       "name":"Ratte Peat",
-      "ImageURL":"Ratte Peat.jpg",
+      "ImageURL":"Bilder/Handelkurv/Ratte Peat.jpg",
       "tekst":"",
       "Vekt": 1,
       "pris": 50
     },
     "Pot002":{
       "name":"Amandine",
-      "ImageURL":"Amandine.jpg",
+      "ImageURL":"Bilder/Handelkurv/Amandine.jpg",
       "tekst":"",
       "Vekt": 1,
       "pris": 44
     },
     "Pot003":{
       "name":"Asterix",
-      "ImageURL":"Asterix.jpg",
+      "ImageURL":"Bilder/Handelkurv/Asterix.jpg",
       "tekst":"",
       "Vekt": 1,
       "pris": 40
     },
     "Pot004":{
       "name":"Søtpotet",
-      "ImageURL":"Søtpotet.jpg",
+      "ImageURL":"Bilder/Handelkurv/Søtpotet.jpg",
       "tekst":"",
       "Vekt": 1,
       "pris": 17
