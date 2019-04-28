@@ -24,7 +24,7 @@
       },
       "Ingefaer":{
           "name":"Ingefær",
-          "ImageURL":"Ingefaer",
+          "ImageURL":"Ingefaer.jpg",
           "tekst":"<p>På ingefæren er det den kraftige underjordiske stengelknollen som brukes. Den spesielle fasongen kommer av flere bladskudd og utvekster under vekstperioden. Ingefær er lys brun utvendig med en svak gulgrønn farge innvendig. Hvis man knekker knollen over kjenner man straks dens friske duft. Duften kommer fra plantens eteriske oljer som inneholder aromatene zingeron og gingerol. Ingefær brukes som krydder på linje med den tørkede varianten, men har en langt friskere smak fersk enn tørket.</p>",
           "Vekt": 1,
           "pris": 10
@@ -118,9 +118,10 @@
           "pris": 12
         }
       },
+      "Poteter":{
     "Pot001":{
       "name":"Ratte Peat",
-      "ImageURL":"Ratte Peat.jpg",
+      "ImageURL":"Rattepeat.jpg",
       "tekst":"<p>Ratte Peat er en fransk delikatessepotet med små avlange knoller som minner om mandelpotet. Skallet og fruktkjøttet er hvitt. Det er en god matpotet som blir litt melen ved koking, men koker ikke så lett i stykker.</p>",
       "Vekt": 1,
       "pris": 50
@@ -146,6 +147,7 @@
       "Vekt": 1,
       "pris": 17
       }
+    }
   },
   "handlekurv": {
     "Gulrot":{
@@ -260,12 +262,13 @@
         "Vekt": 1,
         "pris": 12
       },
-      "Pot001":{
-        "name":"Ratte Peat",
-        "ImageURL":"Ratte Peat.jpg",
-        "tekst":"<p>Ratte Peat er en fransk delikatessepotet med små avlange knoller som minner om mandelpotet. Skallet og fruktkjøttet er hvitt. Det er en god matpotet som blir litt melen ved koking, men koker ikke så lett i stykker.</p>",
-        "Vekt": 1,
-        "pris": 50
+
+          "Pot001":{
+          "name":"Ratte Peat",
+          "ImageURL":"Rattepeat.jpg",
+          "tekst":"<p>Ratte Peat er en fransk delikatessepotet med små avlange knoller som minner om mandelpotet. Skallet og fruktkjøttet er hvitt. Det er en god matpotet som blir litt melen ved koking, men koker ikke så lett i stykker.</p>",
+          "Vekt": 1,
+          "pris": 50
       },
 
       "Pot002":{
@@ -288,6 +291,6 @@
         "tekst":"<p>Til tross for navnet er søtpoteten ikke i slekt med vanlig potet selv om bruksområdene kan være like. Søtpoteten er avlang i formen og kan bli ganske stor. Den har varianter med både orange og hvitt fruktkjøtt. Den orange varianten er mest vanlig. Fargen på skallet kan variere fra lys brunt til rødt. Smaken er som nevnt søtaktig og kan minne om en søt gulrot. Søtpotet får en myk og kremaktig konsistens etter varmebehandling.</p>",
         "Vekt": 1,
         "pris": 17
+          }
         }
       }
-    }
