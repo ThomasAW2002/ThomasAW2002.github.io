@@ -1,64 +1,78 @@
 <!DOCTYPE html>
 <html lang="nb" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="Test4.css">
+    </head>
     <header>
+      <section id="Navbar-original">
 
 
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <body>
+              <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+                <button class="w3-bar-item w3-button w3-large"
+                onclick="w3_close()">Close &times;</button>
+                <a href="Test 1.html" class="w3-bar-item w3-button">Miljøvennlig</a>
+                <a href="Nyheter.html" class="w3-bar-item w3-button">Nyheter</a>
+                <a href="Kontakt oss.html" class="w3-bar-item w3-button">Kontakt oss</a>
+                <a href="Butikk.html" class="w3-bar-item w3-button">Butikk</a>
+                <a href="Bli Medlem.html" class="w3-bar-item w3-button">Bli Medlem</a>
+                <a href="Sammarbeid med oss.html" class="w3-bar-item w3-button">Sammarbeid med oss</a>
 
-          <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
-            <button class="w3-bar-item w3-button w3-large"
-            onclick="w3_close()">Close &times;</button>
-            <a href="Miljøvennlig.html" class="w3-bar-item w3-button">Miljøvennlig</a>
-            <a href="Nyheter.html" class="w3-bar-item w3-button">Nyheter</a>
-            <a href="Kontakt oss.html" class="w3-bar-item w3-button">Kontakt oss</a>
-            <a href="Butikk.html" class="w3-bar-item w3-button">Butikk</a>
-            <a href="Bli Medlem.html" class="w3-bar-item w3-button">Bli Medlem</a>
-            <a href="Sammarbeid med oss.html" class="w3-bar-item w3-button">Sammarbeid med oss</a>
 
-        </div>
+            </div>
+            </section>
 
-        <div id="main">
-        <div class="w3-teal">
-          <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-          <div class="w3-container">
+            <div id="main">
+            <div class="w3-teal">
+              <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+              <div class="w3-container">
 
-        <nav>
-          <a href="#">Om Oss</a>
-          <a href="#">Bli Medlem</a>
+                  <a href="Test 1.html">Om Oss</a>
+                  <img src="Vare-Hare1.png"/>
+                  <a href="Kontakt Oss">Kontakt Oss</a>
 
-        </nav>
 
-          </div>
-        </div>
 
         </div>
+      </div>
 
-        <script>
-        function w3_open() {
-          document.getElementById("main").style.marginLeft = "25%";
-          document.getElementById("mySidebar").style.width = "25%";
-          document.getElementById("mySidebar").style.display = "block";
-          document.getElementById("openNav").style.display = 'none';
-        }
-        function w3_close() {
-          document.getElementById("main").style.marginLeft = "0%";
-          document.getElementById("mySidebar").style.display = "none";
-          document.getElementById("openNav").style.display = "inline-block";
-        }
-        </script>
-  </header>
+              </div>
+
+            <script>
+            function w3_open() {
+              document.getElementById("main").style.marginLeft = "25%";
+              document.getElementById("mySidebar").style.width = "25%";
+              document.getElementById("mySidebar").style.display = "block";
+              document.getElementById("openNav").style.display = 'none';
+            }
+            function w3_close() {
+              document.getElementById("main").style.marginLeft = "0%";
+              document.getElementById("mySidebar").style.display = "none";
+              document.getElementById("openNav").style.display = "inline-block";
+            }
+
+            function myFunction() {
+// Get the snackbar DIV
+var x = document.getElementById("snackbar");
+
+// Add the "show" class to DIV
+x.className = "show";
+
+// After 3 seconds, remove the show class from DIV
+setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+            </script>
+
+
+    </header>
   <body>
     <div class="text">
       <h2>Text</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-    <div class="container">
+
+    <div class="containerB">
       <form action="action_page.php">
         <li>
 
@@ -100,8 +114,14 @@
         <input type="text" id="fname" name="firstname" placeholder="CCV/CVC">
           </li>
 <br>
-        <input type="submit" value="Submit">
+<li>
+<input id="rbTaco"type="radio" name="rbMat" value="taco"><label for="rbTaco">1 mnd</label>
+<input id="rbPizza"type="radio" name="rbMat" value="Pizza"><label for="rbPizza">6 mnd</label>
+<input id="rbFisk="type="radio" name="rbMat" value="Fisk"><label for="rbFisk">12 mnd</label>
+</li>
 
+        <input type="submit" value="Submit">
+<div id="snackbar">Nå er du Medlem</div>
       </form>
     </div>
   </body>
