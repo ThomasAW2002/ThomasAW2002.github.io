@@ -20,6 +20,11 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
+.Navbar{
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
@@ -29,6 +34,8 @@ main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 img{
   width: 100%;

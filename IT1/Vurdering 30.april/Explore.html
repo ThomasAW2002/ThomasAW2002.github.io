@@ -43,8 +43,7 @@
 
 <div class="w3-teal">
   <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-  <div class="w3-container">
-    <h1>Doctor Who</h1>
+  <div class="Navbar">
   </div>
 </div>
 
@@ -94,13 +93,14 @@ function w3_close() {
               let ItemSnap = snapshot.val();
               console.log(ItemSnap);
               let key = snapshot.key;
+              let parent = snapshot.ref.parent.key;
               console.log(key);
               main.innerHTML +=`
                   <article class="Item">
                     <h1>${ItemSnap.name}</h1>
                     <img src="${ItemSnap.ImageURL}" alt="">
                     <p>${ItemSnap.Story}</p>
-                    <a href="ShopItems.html.html?id=${key}">Les mer</a>
+                    <a href="CharacterUnderside.html?key=${key}&parent=${parent}">Les mer</a>
                   </article>
               `;
           }

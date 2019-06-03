@@ -5,25 +5,25 @@
                 "merke":"10th Screwdriver",
                 "pris":140,
                 "modell":"versjon 10",
-                "ImageURL":"10th Driver.jpg"
+                "ImageURL":"Bilder/10th Driver.jpg"
                   },
                   "driver002":{
                     "merke":"11th Screwdriver",
                     "pris":140,
                     "modell":"versjon 11",
-                    "ImageURL":"11th Driver.jpg"
+                    "ImageURL":"Bilder/11th Driver.jpg"
                 },
                   "driver003":{
                     "merke":"12th Scredriver",
                     "pris":140,
                     "modell":"versjon 12",
-                    "ImageURL":"12th Driver.jpg"
+                    "ImageURL":"Bilder/12th Driver.jpg"
                 },
                 "driver004":{
                   "merke":"13th Screwdriver",
                   "pris":140,
                   "modell":"versjon 13",
-                  "ImageURL":"13th Driver.jpg"
+                  "ImageURL":"Bilder/13th Driver.jpg"
                 }
             },
           "tshirt":{
@@ -31,26 +31,26 @@
                 "pris":100,
                 "merke":"Who Merch",
                 "størrelse":"medium",
-                "ImageURL":"tshirt1.jpg"
+                "ImageURL":"Bilder/tshirt1.jpg"
             },
 
             "tshirt002":{
                 "pris":100,
                 "merke":"Who Merch",
                 "størrelse":"medium",
-                "ImageURL":"tshirt2.jpg"
+                "ImageURL":"Bilder/tshirt2.jpg"
             },
             "tshirt003":{
                 "pris":100,
                 "merke":"Who Merch",
                 "størrelse":"medium",
-                "ImageURL":"tshirt3.jpg"
+                "ImageURL":"Bilder/tshirt3.jpg"
             },
             "tshirt004":{
                 "pris":100,
                 "merke":"Who Merch",
                 "størrelse":"medium",
-                "ImageURL":"tshirt4.jpg"
+                "ImageURL":"Bilder/tshirt4.jpg"
             }
           },
           "Pillows":{
@@ -59,56 +59,56 @@
               "merke":"Who Merch",
               "størrelse":"medium",
               "Doctor":"11th",
-              "ImageURL":"Pillow1.jpg"
+              "ImageURL":"Bilder/Pillow1.jpg"
             },
             "Pillows002":{
               "pris":130,
               "merke":"Who Merch",
               "størrelse":"Large",
               "Doctor":"11th",
-              "ImageURL":"Pillow2.jpg"
+              "ImageURL":"Bilder/Pillow2.jpg"
             },
             "Pillows003":{
               "pris":135,
               "merke":"Who Merch",
               "størrelse":"small",
               "Doctor":"11th",
-              "ImageURL":"Pillow3.jpg"
+              "ImageURL":"Bilder/Pillow3.jpg"
             },
             "Pillows004":{
               "pris":160,
               "merke":"Who Merch",
               "størrelse":"Large",
               "Doctor":"12th",
-              "ImageURL":"Pillow4.jpg"
+              "ImageURL":"Bilder/Pillow4.jpg"
               },
               "Pillows005":{
                 "pris":130,
                 "merke":"Who Merch",
                 "størrelse":"Small",
                 "Doctor":"12th",
-                "ImageURL":"Pillow5.jpg"
+                "ImageURL":"Bilder/Pillow5.jpg"
                 },
                 "Pillows006":{
                   "pris":150,
                   "merke":"Who Merch",
                   "størrelse":"Medium",
                   "Doctor":"12th",
-                  "ImageURL":"Pillow6.jpg"
+                  "ImageURL":"Bilder/Pillow6.jpg"
                   },
                   "Pillows007":{
                     "pris":130,
                     "merke":"Who Merch",
                     "størrelse":"Large",
                     "Doctor":"10th",
-                    "ImageURL":"Pillow7.jpg"
+                    "ImageURL":"Bilder/Pillow7.jpg"
                     },
                     "Pillows008":{
                       "pris":130,
                       "merke":"Who Merch",
                       "størrelse":"Large",
                       "Doctor":"10th",
-                      "ImageURL":"Pillow8.jpg"
+                      "ImageURL":"Bilder/Pillow8.jpg"
                       }
                     },
               "Mugs":{
@@ -116,50 +116,50 @@
                     "pris":80,
                     "merke":"Who Merch",
                     "Doctor":"10th",
-                    "ImageURL":"Mug1.jpg"
+                    "ImageURL":"Bilder/Mug1.jpg"
                   },
 
                   "Mugs002":{
                   "pris":70,
                   "merke":"Who Merch",
                   "Doctor":"10th",
-                  "ImageURL":"Mug2.jpg"
+                  "ImageURL":"Bilder/Mug2.jpg"
                 },
                 "Mugs003":{
                   "pris":60,
                   "merke":"Who Merch",
                   "Doctor":"10th",
-                  "ImageURL":"Mug3.jpg"
+                  "ImageURL":"Bilder/Mug3.jpg"
                 },
                 "Mugs004":{
                   "pris":75,
                   "merke":"Who Merch",
                   "Doctor":"11th",
-                  "ImageURL":"Mug4.jpg"
+                  "ImageURL":"Bilder/Mug4.jpg"
                 },
                 "Mugs005":{
                   "pris":90,
                   "merke":"Who Merch",
                   "Doctor":"11th",
-                  "ImageURL":"Mug5.jpg"
+                  "ImageURL":"Bilder/Mug5.jpg"
                 },
                 "Mugs006":{
                   "pris":40,
                   "merke":"Who Merch",
                   "Doctor":"11th",
-                  "ImageURL":"Mug6.jpg"
+                  "ImageURL":"Bilder/Mug6.jpg"
                 },
                 "Mugs007":{
                   "pris":50,
                   "merke":"Who Merch",
                   "Doctor":"12th",
-                  "ImageURL":"Mug7.jpg"
+                  "ImageURL":"Bilder/Mug7.jpg"
                 },
                 "Mugs008":{
                   "pris":68,
                   "merke":"Who Merch",
                   "Doctor":"12th",
-                  "ImageURL":"Mug8.jpg"
+                  "ImageURL":"Bilder/Mug8.jpg"
                 }
               },
               "Coaster":{
@@ -167,49 +167,49 @@
                   "pris":50,
                   "merke":"Who Merch",
                   "Doctor":"10th",
-                  "ImageURL":"Coaster1.jpg"
+                  "ImageURL":"Bilder/Coaster1.jpg"
                 },
                 "Coaster002":{
                   "pris":50,
                   "merke":"Who Merch",
                   "Doctor":"11th",
-                  "ImageURL":"Coaster2.jpg"
+                  "ImageURL":"Bilder/Coaster2.jpg"
                 },
                 "Coaster003":{
                   "pris":50,
                   "merke":"Who Merch",
                   "Doctor":"12th",
-                  "ImageURL":"Coaster3.jpg"
+                  "ImageURL":"Bilder/Coaster3.jpg"
                 },
                 "Coaster004":{
                   "pris":50,
                   "merke":"Who Merch",
                   "Doctor":"9th",
-                  "ImageURL":"Coaster4.jpg"
+                  "ImageURL":"Bilder/Coaster4.jpg"
                 },
                 "Coaster005":{
                   "pris":50,
                   "merke":"Who Merch",
                   "Doctor":"9th",
-                  "ImageURL":"Coaster5.jpg"
+                  "ImageURL":"Bilder/Coaster5.jpg"
                 },
                 "Coaster006":{
                   "pris":50,
                   "merke":"Who Merch",
                   "Doctor":"9th",
-                  "ImageURL":"Coaster6.jpg"
+                  "ImageURL":"Bilder/Coaster6.jpg"
                 },
                 "Coaster007":{
                   "pris":50,
                   "merke":"Who Merch",
                   "Doctor":"9th",
-                  "ImageURL":"Coaster7.jpg"
+                  "ImageURL":"Bilder/Coaster7.jpg"
                 },
                 "Coaster008":{
                   "pris":50,
                   "merke":"Who Merch",
                   "Doctor":"9th",
-                  "ImageURL":"Coaster8.jpg"
+                  "ImageURL":"Bilder/Coaster8.jpg"
                 }
               }
             }

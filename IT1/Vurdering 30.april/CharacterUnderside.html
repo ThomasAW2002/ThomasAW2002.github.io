@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nb" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAcwmGhyJjBnCXCzn8J3wdbVw3yMzyoIL4",
+        authDomain: "doctor-who-characters.firebaseapp.com",
+        databaseURL: "https://doctor-who-characters.firebaseio.com",
+        projectId: "doctor-who-characters",
+        storageBucket: "doctor-who-characters.appspot.com",
+        messagingSenderId: "584686465549"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+    <main>
+
+    </main>
+    <script type="text/javascript">
+      const main = document.querySelector(main);
+
+      let url_string = window.location.href
+      let url_string = new URL(url_string);
+      let parent = urlsearchparams.get("parent");
+      let key = urlsearchparams.get("key");
+
+      console.log(key,parent)
+
+      const db = firebase.database();
+      const CharacterUnderside = db.ref("Characters/"+parent+"/"+key);
+
+      CharacterUnderside.on("value",genererHTML);
+
+
+function genererHTML(snapshot){  
+      let ItemSnap = snapshot.val();
+      console.log(ItemSnap);
+      let key = snapshot.key;
+      let parent = snapshot.ref.parent.key;
+      console.log(key);
+      main.innerHTML +=`
+          <article class="Item">
+            <h1>${ItemSnap.name}</h1>
+            <img src="${ItemSnap.ImageURL}" alt="">
+            <p>${ItemSnap.Story}</p>
+          </article>
+      `;
+  }
+
+    </script>
+  </body>
+</html>

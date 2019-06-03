@@ -13,6 +13,13 @@ li {
   float: left;
 }
 
+.main{
+  width: 100;
+  align-items: center;
+  margin-right: auto;
+  text-align: center;
+}
+
 li a {
   display: block;
   color: white;

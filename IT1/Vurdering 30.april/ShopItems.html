@@ -59,16 +59,36 @@
 
           }
 
-        main.innerHTML += `
-          <section class="valgtItems">
-          <h1>${objekt.Pris}</h1>
-          <img src="${objekt.ImageURL}">
-          <p>${typeTekst}</p>
-          <p>Pris: ${objekt.Pris}</p>
-          <p>merke: ${objekt.merke}</p>
-          </section>
-          `
-        }
+      
+
+        const main = document.querySelector(main);
+
+        let url_string = window.location.href
+        let url_string = new URL(url_string);
+        let parent = urlsearchparams.get("parent");
+        let key = urlsearchparams.get("key");
+
+        console.log(key,parent)
+
+        const db = firebase.database();
+        const CharacterUnderside = db.ref("varer/"+parent+"/"+key);
+
+        ShopItems.on("value",genererHTML);
+
+        let ItemSnap = snapshot.val();
+        console.log(ItemSnap);
+        let key = snapshot.key;
+        let parent = snapshot.ref.parent.key;
+        console.log(key);
+        main.innerHTML +=`
+            <article class="Item">
+              <h1>${ItemSnap.pris}</h1>
+              <img src="${ItemSnap.ImageURL}" alt="">
+              <p>${ItemSnap.merke}</p>
+            </article>
+        `;
+    }
+
 
         //pokemon.on("child_added", visPokemon);
 

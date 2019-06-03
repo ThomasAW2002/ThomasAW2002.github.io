@@ -1,0 +1,169 @@
+
+
+.About-me{
+ column-count: 3;
+ column-gap: 20px;
+ column-rule-color: lightblue;
+ column-rule-style: solid;
+ column-rule-width: 1px;
+}
+
+
+#Projects{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 300px;
+  margin-right: 300px;
+  grid-gap: 55px;
+}
+
+#Book{
+  grid-template-columns: repeat(1, 1fr);
+  display: grid;
+  grid-gap: 50px;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  transition: transform 0.3s;
+  border-radius: 20px;
+}
+
+
+#Book:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+  filter: blur(5px);
+}
+
+#Pokemon{
+  grid-template-columns: repeat(1, 1fr);
+  display: grid;
+  grid-gap: 50px;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  transition: transform 0.3s;
+  border-radius: 20px;
+}
+
+
+#Pokemon:hover{
+  opacity: 0.5;
+  transform: scale(1.1);
+  transition: 0.3s;
+  filter: blur(5px);
+}
+
+#Sandvika{
+  grid-template-columns: repeat(1, 1fr);
+  display: grid;
+  grid-gap: 50px;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  transition: transform 0.3s;
+}
+
+
+#Sandvika:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+  filter: blur(5px);
+}
+
+#Butikk{
+  grid-template-columns: repeat(1, 1fr);
+  display: grid;
+  grid-gap: 50px;
+  text-align: center;
+  text-decoration: none;
+  background-color: black;
+  transition: transform 0.3s;
+}
+
+#img{
+
+
+}
+
+#Butikk:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+  filter: blur(5px);
+}
+
+h2{
+  text-align: center;
+}
+
+
+
+#ButikkBilde{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+
+
+.image {
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.Text{
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+
+
+.text{
+  background-color: purple;
+  color: white;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+#Projects{
+  position: relative;
+}
+#Projects section:hover .Text{
+  opacity: 1;
+}
+
+.text:hover{
+  filter: invert(.8);
+}
+
+#nav{
+  display: grid;
+  grid-template-columns: repeat(3.1fr);
+  text-align: center;
+  text-decoration: none;
+  font-family: serif;
+  background-color: lightblue
+}
+
+#nav img{
+  width: 7%;
+}
+
+#say{
+  border-radius: 20px;
+  background-color: darkblue;
+  padding: 20px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+#say:hover{
+filter: invert(1);
+}

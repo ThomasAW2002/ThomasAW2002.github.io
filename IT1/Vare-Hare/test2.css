@@ -1,8 +1,0 @@
-body> header> nav{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-}
-body> header> nav> img{
-  width: 100%;
-  
-}

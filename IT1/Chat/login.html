@@ -1,0 +1,65 @@
+
+    <!DOCTYPE html>
+    <html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./style.css">
+        <title>Log in</title>
+
+    </head>
+    <body>
+
+        <h1>Log in to the awesome web site</h1>
+        <div id="firebaseui-auth-container"></div>
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+
+        <script>
+
+          var firebaseConfig = {
+            apiKey: "AIzaSyB6x-Yvk-2f7HPaQHhYtaye1C2geJDYFNs",
+            authDomain: "portfolio-1e72d.firebaseapp.com",
+            databaseURL: "https://portfolio-1e72d.firebaseio.com",
+            projectId: "portfolio-1e72d",
+            storageBucket: "portfolio-1e72d.appspot.com",
+            messagingSenderId: "418657676447",
+            appId: "1:418657676447:web:59c3d2f9a2a01622"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+        </script>
+
+
+
+        <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+        <script type="text/javascript">
+        // FirebaseUI config.
+        var uiConfig = {
+            signInSuccessUrl: 'chat.html',
+            signInOptions: [
+            // Leave the lines as is for the providers you want to offer your users.
+            firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+            firebase.auth.EmailAuthProvider.PROVIDER_ID
+            ],
+            // tosUrl and privacyPolicyUrl accept either url string or a callback
+            // function.
+            // Terms of service url/callback.
+            tosUrl: '<your-tos-url>',
+            // Privacy policy url/callback.
+            privacyPolicyUrl: function() {
+            window.location.assign('<your-privacy-policy-url>');
+            }
+        };
+        // Initialize the FirebaseUI Widget using Firebase.
+        var ui = new firebaseui.auth.AuthUI(firebase.auth());
+        // The start method will wait until the DOM is loaded.
+        ui.start('#firebaseui-auth-container', uiConfig);
+        </script>
+
+    </body>
+    </html>

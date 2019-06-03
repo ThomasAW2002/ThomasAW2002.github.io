@@ -1,0 +1,15 @@
+body {
+    background-color: #eee;
+}
+h1 {
+    font-family: sans-serif;
+    color: darkcyan;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+#uteSecMeldinger{
+  overflow: auto;
+  height: 20vw;
+  display: grid;
+}

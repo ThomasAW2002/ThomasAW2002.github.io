@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+
+    <script>
+
+      var firebaseConfig = {
+        apiKey: "AIzaSyB6x-Yvk-2f7HPaQHhYtaye1C2geJDYFNs",
+        authDomain: "portfolio-1e72d.firebaseapp.com",
+        databaseURL: "https://portfolio-1e72d.firebaseio.com",
+        projectId: "portfolio-1e72d",
+        storageBucket: "portfolio-1e72d.appspot.com",
+        messagingSenderId: "418657676447",
+        appId: "1:418657676447:web:59c3d2f9a2a01622"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <main>
+      <section id="uteSecMeldinger">
+        <div id="secMeldinger">
+
+        </div>
+      </section>
+      <form id="skjema">
+        <input id="inpMelding" type="text" name="inpMelding" value="">
+        <button id="btnSend" type="button" name="button"></button>
+      </form>
+    </main>
+
+<script src="main.js" charset="utf-8"></script>
+
+  </body>
+</html>

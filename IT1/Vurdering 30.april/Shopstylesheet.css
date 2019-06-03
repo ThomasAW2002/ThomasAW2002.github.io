@@ -4,6 +4,16 @@ li a:hover {
   background-color: black;
 }
 
+.Navbar{
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+header{
+background-color: #f2f2f2;
+}
+
 li{
   text-align: center;
 }
@@ -12,21 +22,33 @@ main{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 50px;
   padding: 15px;
+  width: 100%;
+  background-color: #f2f2f2;
 }
+
+
+
+
 img{
   width: 100%;
 }
 
 
 .varer{
-  background-image: linear-gradient(white,gray);
+  background-image: linear-gradient(lightgrey,grey);
   align-items: center;
   color: white;
+}
+
+.main{
+  width: 100%;
+  align-items: center;
 }
 
 main a{
   transition: 0.2s;
   text-decoration: none;
+  width: 100%;
 }
 a *{
   text-decoration: none;
@@ -38,6 +60,9 @@ main a:hover{
 
 html{
   padding: 10px;
+}
+.Grid-container{
+  background-color: #f2f2f2;
 }
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
