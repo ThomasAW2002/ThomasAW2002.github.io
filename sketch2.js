@@ -1,21 +1,23 @@
 
-let beginX = 700.0; // Initial x-coordinate
-let beginY = 350.0; // Initial y-coordinate
-let endX = 10.0; // Final x-coordinate
-let endY = 10.0; // Final y-coordinate
+let beginX = 20; // Initial x-coordinate
+let beginY = 550; // Initial y-coordinate
+let endX = 1300; // Final x-coordinate
+let endY = 600; // Final y-coordinate
 let distX; // X-axis distance to move
 let distY; // Y-axis distance to move
-let exponent = 5; // Determines the curve
+let exponent = 20; // Determines the curve
 let x = 0.0; // Current x-coordinate
 let y = 0.0; // Current y-coordinate
 let step = 0.01; // Size of each step along the path
 let pct = 0.0; // Percentage traveled (0.0 to 1.0)
 
 function setup() {
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(1300,600);
   noStroke();
   distX = endX - beginX;
   distY = endY - beginY;
+
+  
 }
 
 function draw() {
@@ -28,8 +30,8 @@ function draw() {
   }
   fill(255);
   ellipse(x, y, 20, 20);
-  rect(20,350,80,40,20);
-  arc()
+  rect(30,550,80,40,20);
+  arc(20,400,100,100, PI + QUARTER_PI, CHORD);
 
 
 
