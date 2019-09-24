@@ -1,14 +1,11 @@
 function setup() {
   createCanvas(400, 400,);
-  noStroke();
 }
 
 function draw() {
   //background(255);
-  ellipse(mouseX,mouseY,50,50);
-  fill(50);
-  ellipse(mouseX,mouseY,50,50);
-  noFill();
+  background(220);
 
-
-  
+  for(let x = 10, y = 10; x < 100; x = x + 10, y = y + 10){
+    circle(x,y,25);
+  }

@@ -17,7 +17,7 @@ function setup() {
   distX = endX - beginX;
   distY = endY - beginY;
 
-  
+
 }
 
 function draw() {
