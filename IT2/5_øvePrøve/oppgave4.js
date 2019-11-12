@@ -20,4 +20,4 @@ else{
   galt = galt + 1;
 }
 
-alert("Du fikk: "+riktig+"poeng.")
+alert("Du fikk: "+riktig+" poeng.")
