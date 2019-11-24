@@ -4,6 +4,7 @@ class Astroider{
     this.y = Math.random() * width / 4;
     this.storrelse = 15;
     this.farge = `rgb(${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)})`;
+    this.slett = false;
   }
 
   tegn(){
@@ -12,9 +13,13 @@ class Astroider{
     stroke(30);
   }
 
+  slett(){
+    this.slett = true;
+  }
+
 
   move(){
-   this.y = this.y + 3;
+   this.y = this.y + 1;
   }
 
 

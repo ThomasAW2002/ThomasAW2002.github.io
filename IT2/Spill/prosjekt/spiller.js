@@ -14,6 +14,6 @@ class Spiller{
     }
 
     move(){
-     this.x += this.dir*5;
+     this.x += this.dir*10;
     }
 }

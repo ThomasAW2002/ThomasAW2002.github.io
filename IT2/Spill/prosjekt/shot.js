@@ -3,6 +3,7 @@ class Shots{
     this.x = x;
     this.y = y;
     this.storrelse = 20
+    this.slett = false;
   }
 
   tegn(){
@@ -11,7 +12,17 @@ class Shots{
     noStroke();
   }
 
+  slett(){
+    this.slett = true;
+  }
+
+  hits(){
+    
+}
+
   move(){
       this.y = this.y - 15;
   }
+
+
 }
