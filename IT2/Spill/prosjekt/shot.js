@@ -7,7 +7,7 @@ class Shots{
   }
 
   tegn(){
-    fill(150, 0, 200);
+    fill("black");
     circle(this.x, this.y, this.storrelse);
     noStroke();
   }
@@ -17,7 +17,7 @@ class Shots{
   }
 
   hits(){
-    
+
 }
 
   move(){

@@ -2,9 +2,9 @@ class Astroider{
   constructor(){
     this.x = Math.random() * width;
     this.y = Math.random() * width / 4;
-    this.storrelse = 15;
-    this.farge = `rgb(${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)})`;
-    this.slett = false;
+    this.storrelse = 28;
+    this.farge = `black`;
+
   }
 
   tegn(){
@@ -13,9 +13,7 @@ class Astroider{
     stroke(30);
   }
 
-  slett(){
-    this.slett = true;
-  }
+
 
 
   move(){
