@@ -1,24 +1,16 @@
 class Shots{
   constructor(x, y){
-    this.x = x;
+    this.x = x+30;
     this.y = y;
-    this.storrelse = 20
-    this.slett = false;
+    this.storrelse = 20;
   }
 
   tegn(){
-    fill("black");
+    fill("lightblue");
     circle(this.x, this.y, this.storrelse);
     noStroke();
+    strokeWeight(5);
   }
-
-  slett(){
-    this.slett = true;
-  }
-
-  hits(){
-
-}
 
   move(){
       this.y = this.y - 15;

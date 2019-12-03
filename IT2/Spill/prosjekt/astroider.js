@@ -1,9 +1,9 @@
 class Astroider{
   constructor(){
     this.x = Math.random() * width;
-    this.y = Math.random() * width / 4;
-    this.storrelse = 28;
-    this.farge = `black`;
+    this.y = -10; //Math.random() * width / 4;
+    this.storrelse = 40;
+    this.farge = `white`;
 
   }
 
